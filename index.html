@@ -46,7 +46,7 @@
 				<div class="navbar-collapse collapse" id="page-menu-collapse">
 					<div class="navbar-left">
 						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#header">Home</a></li>
+							<li><a data-scroll href="#header" class="active">Home</a></li>
 							<li><a data-scroll href="#features">How Special !</a></li>
 							<li><a data-scroll href="#brief">Blog</a></li>
 						</ul>
@@ -85,8 +85,8 @@
 						<span class="animated mk-inline orangeclr">p</span>
 						<span class="animated mk-inline orangeclr">e</span>
 						<span class="animated mk-inline orangeclr">r</span>
-						<strong class="animated flash infinite">|</strong></h2>
-					<p id="company-caption" class="section-paragraph animated pulse">Lets Chalk this way</p>
+						<strong class="animated fadeIn infinite">|</strong></h2>
+					<p id="company-caption" class="section-paragraph animated fadeIn">Lets Chalk this way</p>
 				</div>
 			</div>  
 
@@ -240,7 +240,11 @@
       $(window).bind('scroll', function () {
       	var wScroll = $(this).scrollTop();
       	console.log(wScroll);
-      	$('#grad-hat img').css({'transform': 'translate(0px, -'+wScroll*2+'%)'});
+      	if ($(window).scrollTop() > 5) 
+      	$('#grad-hat img').addClass("flyhat");
+      	else 
+      		$('#grad-hat img').removeClass("flyhat");
+      	// $('#grad-hat img').css({'transform': 'translate(0px, -'+wScroll*2+'%)'});
       	// $('#company-title').css({'transform': 'translate(0px, '+wScroll+'%)'});
       	// $('#company-caption').css({'transform': 'translate(0px, '+wScroll/wScroll+'%)'});
         if ($(window).scrollTop() > 50) 
@@ -339,7 +343,11 @@
        //  else $(this.element).removeClass('fadeInUpBig');
       	// 	}, { offset: '96%' });
       	});
-      
+      $("#page-menu-collapse li>a").click(function(){
+		// alert("hello");
+		$("#page-menu-collapse li").children().removeClass("active");
+		$(this).addClass("active");
+	});
       
       // slide1 anim
       // $('#test').waypoint(function(direction) {

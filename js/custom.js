@@ -58,8 +58,8 @@ new ScrollMagic.Scene({
 						$("#slide01").removeClass("hide-div");
 						
 						$("#slide01").addClass("show-div");
-						$("#content1-slide").addClass("fadeInRightBig");
-						$("#content1-slide").removeClass("rotateOutDownLeft");
+						$("#content1-slide").addClass("fadeInDownBig");
+						$("#content1-slide").removeClass("fadeOutDownBig");
 						$("#img1-slide").addClass("zoomIn");
 						$("#img1-slide").removeClass("zoomOut");
 						// }else
@@ -67,8 +67,8 @@ new ScrollMagic.Scene({
 					// });
 					});
 					slider1.on("leave", function(){
-						$("#content1-slide").removeClass("fadeInRightBig");
-						$("#content1-slide").addClass("rotateOutDownLeft");
+						$("#content1-slide").removeClass("fadeInDownBig");
+						$("#content1-slide").addClass("fadeOutDownBig");
 						$("#img1-slide").addClass("zoomOut");
 						$("#img1-slide").removeClass("zoomIn");
 					});
@@ -81,16 +81,16 @@ new ScrollMagic.Scene({
 					// $("#slide02").waypoint(function(direction){
 					// 	if (direction === 'down')
 					// 	{
-						$("#content2-slide").addClass("fadeInRightBig");
-						$("#content2-slide").removeClass("rotateOutDownLeft");
+						$("#content2-slide").addClass("fadeInDownBig");
+						$("#content2-slide").removeClass("fadeOutDownBig");
 						
 						$("#slide01").removeClass("show-div");
 						$("#slide02").removeClass("hide-div");
 						$("#slide02").addClass("show-div");
 						$("#img2-slide").addClass("zoomIn");
 						$("#img2-slide").removeClass("zoomOut");
-						// $("#content1-slide").removeClass("fadeInRightBig");
-						// $("#content1-slide").addClass("rotateOutDownLeft");
+						// $("#content1-slide").removeClass("fadeInDownBig");
+						// $("#content1-slide").addClass("fadeOutDownBig");
 						// $("#img1-slide").addClass("zoomOut");
 						// $("#img1-slide").removeClass("zoomIn");
 					// 	}else
@@ -99,8 +99,8 @@ new ScrollMagic.Scene({
 
 					});
 					slider2.on("leave", function(){
-						$("#content2-slide").removeClass("fadeInRightBig");
-						$("#content2-slide").addClass("rotateOutDownLeft");
+						$("#content2-slide").removeClass("fadeInDownBig");
+						$("#content2-slide").addClass("fadeOutDownBig");
 						$("#img2-slide").addClass("zoomOut");
 						$("#img2-slide").removeClass("zoomIn");
 					});
@@ -113,8 +113,8 @@ new ScrollMagic.Scene({
 						// $("#slide03").waypoint(function(direction){
 						// if (direction === 'down')
 						// {
-						$("#content3-slide").addClass("fadeInRightBig");
-						$("#content3-slide").removeClass("rotateOutDownLeft");
+						$("#content3-slide").addClass("fadeInDownBig");
+						$("#content3-slide").removeClass("fadeOutDownBig");
 						// $("#slide04").removeClass("show-div");
 						$("#slide02").removeClass("show-div");
 						$("#slide03").removeClass("hide-div");
@@ -123,8 +123,8 @@ new ScrollMagic.Scene({
 
 						$("#img3-slide").addClass("zoomIn");
 						$("#img3-slide").removeClass("zoomOut");
-						// $("#content2-slide").removeClass("fadeInRightBig");
-						// $("#content2-slide").addClass("rotateOutDownLeft");
+						// $("#content2-slide").removeClass("fadeInDownBig");
+						// $("#content2-slide").addClass("fadeOutDownBig");
 						// $("#img2-slide").addClass("zoomOut");
 						// $("#img2-slide").removeClass("zoomIn");
 					// }
@@ -134,8 +134,8 @@ new ScrollMagic.Scene({
 						
 					});
 					slider3.on("leave", function(){
-						$("#content3-slide").removeClass("fadeInRightBig");
-						$("#content3-slide").addClass("rotateOutDownLeft");
+						$("#content3-slide").removeClass("fadeInDownBig");
+						$("#content3-slide").addClass("fadeOutDownBig");
 						$("#img3-slide").addClass("zoomOut");
 						$("#img3-slide").removeClass("zoomIn");
 					});
@@ -150,23 +150,23 @@ new ScrollMagic.Scene({
 						// if (direction === 'down' || direction === 'up')
 						// {
 						
-						// $("#content4-slide").removeClass("rotateOutDownLeft");
+						// $("#content4-slide").removeClass("fadeOutDownBig");
 						$("#slide03").removeClass("show-div");
 						$("#slide04").removeClass("hide-div");
 						$("#slide04").addClass("show-div");
 						$("#img4-slide").removeClass("zoomOut");
 						$("#img4-slide").addClass("zoomIn");
-						$("#content4-slide").addClass("fadeInRightBig");
-						$("#content4-slide").removeClass("rotateOutDownLeft");
+						$("#content4-slide").addClass("fadeInDownBig");
+						$("#content4-slide").removeClass("fadeOutDownBig");
 						// repeat
-						$("#content3-slide").removeClass("fadeInRightBig");
-						$("#content3-slide").addClass("rotateOutDownLeft");
+						$("#content3-slide").removeClass("fadeInDownBig");
+						$("#content3-slide").addClass("fadeOutDownBig");
 						$("#img3-slide").addClass("zoomOut");
 						$("#img3-slide").removeClass("zoomIn");
 					});
 					slider4.on("leave", function(){
-						$("#content4-slide").removeClass("fadeInRightBig");
-						$("#content4-slide").addClass("rotateOutDownLeft");
+						$("#content4-slide").removeClass("fadeInDownBig");
+						$("#content4-slide").addClass("fadeOutDownBig");
 						$("#img4-slide").addClass("zoomOut");
 						$("#img4-slide").removeClass("zoomIn");
 					});
@@ -181,8 +181,8 @@ new ScrollMagic.Scene({
 	// // slide 1
 	// var slider1=new ScrollMagic.Scene({triggerElement: "#shrinkOut_img1", duration:600});
 	// 				slider1.on("start", function(e){
-	// 					$("#content1-slide").addClass("fadeInRightBig");
-	// 					$("#content1-slide").removeClass("rotateOutDownLeft");
+	// 					$("#content1-slide").addClass("fadeInDownBig");
+	// 					$("#content1-slide").removeClass("fadeOutDownBig");
 	// 					$("#img1-slide").addClass("zoomIn");
 	// 					$("#img1-slide").removeClass("zoomOut");
 						
@@ -190,8 +190,8 @@ new ScrollMagic.Scene({
 					
 	// 				// slider1.on("end", function(e){
 	// 				// 	// alert("a");
-	// 				// 	$("#content1-slide").removeClass("fadeInRightBig");
-	// 				// 	$("#content1-slide").addClass("rotateOutDownLeft");
+	// 				// 	$("#content1-slide").removeClass("fadeInDownBig");
+	// 				// 	$("#content1-slide").addClass("fadeOutDownBig");
 	// 				// 	$("#img1-slide").addClass("zoomOut");
 	// 				// 	$("#img1-slide").removeClass("zoomIn");
 	// 				// });
@@ -202,12 +202,12 @@ new ScrollMagic.Scene({
 
 	// var slider2=new ScrollMagic.Scene({triggerElement: "#shrinkOut_img2", duration:600});
 	// 				slider2.on("start", function(e){
-	// 					$("#content2-slide").addClass("fadeInRightBig");
-	// 					$("#content2-slide").removeClass("rotateOutDownLeft");
+	// 					$("#content2-slide").addClass("fadeInDownBig");
+	// 					$("#content2-slide").removeClass("fadeOutDownBig");
 	// 					$("#img2-slide").addClass("zoomIn");
 	// 					$("#img2-slide").removeClass("zoomOut");
-	// 					$("#content1-slide").removeClass("fadeInRightBig");
-	// 					$("#content1-slide").addClass("rotateOutDownLeft");
+	// 					$("#content1-slide").removeClass("fadeInDownBig");
+	// 					$("#content1-slide").addClass("fadeOutDownBig");
 	// 					$("#img1-slide").addClass("zoomOut");
 	// 					$("#img1-slide").removeClass("zoomIn");
 
@@ -216,8 +216,8 @@ new ScrollMagic.Scene({
 					
 	// 				// slider2.on("end", function(e){
 	// 				// 	// alert("a");
-	// 				// 	$("#content2-slide").removeClass("fadeInRightBig");
-	// 				// 	$("#content2-slide").addClass("rotateOutDownLeft");
+	// 				// 	$("#content2-slide").removeClass("fadeInDownBig");
+	// 				// 	$("#content2-slide").addClass("fadeOutDownBig");
 	// 				// 	$("#img2-slide").addClass("zoomOut");
 	// 				// 	$("#img2-slide").removeClass("zoomIn");
 	// 				// });
@@ -228,12 +228,12 @@ new ScrollMagic.Scene({
 
 	// var slider3=new ScrollMagic.Scene({triggerElement: "#shrinkOut_img3", duration:600});
 	// 				slider3.on("start", function(e){
-	// 					$("#content3-slide").addClass("fadeInRightBig");
-	// 					$("#content3-slide").removeClass("rotateOutDownLeft");
+	// 					$("#content3-slide").addClass("fadeInDownBig");
+	// 					$("#content3-slide").removeClass("fadeOutDownBig");
 	// 					$("#img3-slide").addClass("zoomIn");
 	// 					$("#img3-slide").removeClass("zoomOut");
-	// 					$("#content2-slide").removeClass("fadeInRightBig");
-	// 					$("#content2-slide").addClass("rotateOutDownLeft");
+	// 					$("#content2-slide").removeClass("fadeInDownBig");
+	// 					$("#content2-slide").addClass("fadeOutDownBig");
 	// 					$("#img2-slide").addClass("zoomOut");
 	// 					$("#img2-slide").removeClass("zoomIn");
 						
@@ -241,8 +241,8 @@ new ScrollMagic.Scene({
 					
 	// 				// slider3.on("end", function(e){
 	// 				// 	// alert("a");
-	// 				// 	$("#content3-slide").removeClass("fadeInRightBig");
-	// 				// 	$("#content3-slide").addClass("rotateOutDownLeft");
+	// 				// 	$("#content3-slide").removeClass("fadeInDownBig");
+	// 				// 	$("#content3-slide").addClass("fadeOutDownBig");
 	// 				// 	$("#img3-slide").addClass("zoomOut");
 	// 				// 	$("#img3-slide").removeClass("zoomIn");
 	// 				// });
@@ -252,12 +252,12 @@ new ScrollMagic.Scene({
 
 	// var slider4=new ScrollMagic.Scene({triggerElement: "#shrinkOut_img4", duration:600});
 	// 				slider4.on("start", function(e){
-	// 					$("#content4-slide").addClass("fadeInRightBig");
-	// 					$("#content4-slide").removeClass("rotateOutDownLeft");
+	// 					$("#content4-slide").addClass("fadeInDownBig");
+	// 					$("#content4-slide").removeClass("fadeOutDownBig");
 	// 					$("#img4-slide").addClass("zoomIn");
 	// 					$("#img4-slide").removeClass("zoomOut");
-	// 					$("#content3-slide").removeClass("fadeInRightBig");
-	// 					$("#content3-slide").addClass("rotateOutDownLeft");
+	// 					$("#content3-slide").removeClass("fadeInDownBig");
+	// 					$("#content3-slide").addClass("fadeOutDownBig");
 	// 					$("#img3-slide").addClass("zoomOut");
 	// 					$("#img3-slide").removeClass("zoomIn");
 						
@@ -265,8 +265,8 @@ new ScrollMagic.Scene({
 					
 	// 				// slider4.on("end", function(e){
 	// 				// 	// alert("a");
-	// 				// 	$("#content4-slide").removeClass("fadeInRightBig");
-	// 				// 	$("#content4-slide").addClass("rotateOutDownLeft");
+	// 				// 	$("#content4-slide").removeClass("fadeInDownBig");
+	// 				// 	$("#content4-slide").addClass("fadeOutDownBig");
 	// 				// 	$("#img4-slide").addClass("zoomOut");
 	// 				// 	$("#img4-slide").removeClass("zoomIn");
 	// 				// });
@@ -281,7 +281,7 @@ new ScrollMagic.Scene({
 
 	// new ScrollMagic.Scene({triggerElement: "#container2", duration:600})
 					
-	// 				.setClassToggle("#content2-slide", "fadeInRightBig")
+	// 				.setClassToggle("#content2-slide", "fadeInDownBig")
 					
 	// 				.addIndicators() // add indicators (requires plugin)
 	// 				.addTo(ctrl_anim);
@@ -294,7 +294,7 @@ new ScrollMagic.Scene({
 
 	// new ScrollMagic.Scene({triggerElement: "#shrinkOut_img2", duration:600})
 					
-	// 				.setClassToggle("#content2-slide", "rotateOutDownLeft")
+	// 				.setClassToggle("#content2-slide", "fadeOutDownBig")
 					
 	// 				.addIndicators() // add indicators (requires plugin)
 	// 				.addTo(ctrl_anim);
@@ -308,7 +308,7 @@ new ScrollMagic.Scene({
 
 	// new ScrollMagic.Scene({triggerElement: "#container3", duration:600})
 					
-	// 				.setClassToggle("#content3-slide", "fadeInRightBig")
+	// 				.setClassToggle("#content3-slide", "fadeInDownBig")
 	// 				.addIndicators() // add indicators (requires plugin)
 	// 				.addTo(ctrl_anim);
 
@@ -320,7 +320,7 @@ new ScrollMagic.Scene({
 
 	// new ScrollMagic.Scene({triggerElement: "#shrinkOut_img3", duration:600})
 					
-	// 				.setClassToggle("#content3-slide", "rotateOutDownLeft")
+	// 				.setClassToggle("#content3-slide", "fadeOutDownBig")
 					
 	// 				.addIndicators() // add indicators (requires plugin)
 	// 				.addTo(ctrl_anim);
@@ -334,7 +334,7 @@ new ScrollMagic.Scene({
 
 	// new ScrollMagic.Scene({triggerElement: "#container4", duration:600})
 					
-	// 				.setClassToggle("#content4-slide", "fadeInRightBig")
+	// 				.setClassToggle("#content4-slide", "fadeInDownBig")
 	// 				.addIndicators() // add indicators (requires plugin)
 	// 				.addTo(ctrl_anim);
 
