@@ -202,8 +202,9 @@ body
 {
 	height: 50px;
 	width: 50px;
-	transform: translate(-257px,-192px);
-	
+	/*transform: translate(-277px,-192px);*/
+	top: 8px;
+	left: 15px;
 	position: fixed;
 	z-index: 1048;
 	transition: transform 0.5s, width 0.5s, height 0.5s;
@@ -900,6 +901,47 @@ div.navbar-header
 	}
 	#landing-page-in{
 		padding-top: 100px;
+	}
+	.container .col-xs-12
+	{
+		width: 50%;
+	}
+	div.slide .brief-img_in img
+	{
+		height: 250px;
+    	width: 144px;
+	}
+	.slide h2.section-heading
+	{
+		font-size: 22px;
+	}
+	.slide .section-heading>span>img
+	{
+		width: 30.3px;
+	}
+	.slide .section-heading>span
+	{
+		height: 55px;
+	}
+	.slide p.section-paragraph
+	{
+		font-family: avenir-small;
+		font-size: 10px;
+	}
+	.slide .desc_product
+	{
+		padding: 5px;
+    	margin-top: 5px;
+	}
+	#container3 .brief-img_in img
+	{
+		width: 186px;
+    	height: 245px;
+	}
+	#container4 .brief-img_in img
+	{
+		width: 224px;
+		height: 113px;
 	}
 }
 
