@@ -32,10 +32,12 @@ new ScrollMagic.Scene({
 .addTo(ctrl);
 
 // trans
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 600}});
+	var controller = new ScrollMagic.Controller();
+	var ww = $( window ).width();
+	// alert(ww);
 
 	// $("#product_brief.slide").each(function(){
-	// 	var tween = TweenMax.from($this, 0.3, {autoAlpha:0,scale:0.5,y:'+=30', ease:Linear.easeNone});
+	// 	var tween = TweenMax.from($this, 0.005, {autoAlpha:0,scale:0.5,y:'+=30', ease:Linear.easeNone});
 	// 	//build scene
 	// 	var scene=new ScrollMagic.Scene({
 	// 	triggerElement:this
@@ -48,15 +50,32 @@ new ScrollMagic.Scene({
 	// });
 
 	// build scenes
+	var landPage = new ScrollMagic.Scene({triggerElement:'#landing-page'});
+					landPage.on('start', function(e){
+						$("#slide01").removeClass("show-div");
+						$("#slide01").addClass("hide-div");
+						$('#slide-nav').addClass('hide-nav');
+      					$('#slide-nav').removeClass('show-nav');
+					});
+					landPage.triggerHook(0);
+					if(ww > 319 && ww <= 415)
+					 {
+					 landPage.duration(350);
+					}
+					else{
+						landPage.duration(200);
+					}
+					landPage.triggerHook(0.7)
+					// landPage.addIndicators();
+					landPage.addTo(controller);
+	// var tweenSlide1 = new TimelineLite();
+	// 	tweenSlide1.from('#slide01', 0, {opacity:0})
 	var slider1 = new ScrollMagic.Scene({triggerElement: "#slide01"});
 					slider1.setClassToggle("#carsl1", "active-nav"); // add class toggle
 					slider1.on("enter", function(e){
-					// $("#slide01").waypoint(function(direction){
-					// 	if (direction === 'down')
-					// 	{
-						// alert(e);
-						$("#slide01").removeClass("hide-div");
-						
+						// $('#slide-nav').addClass('show-nav');
+      // 					$('#slide-nav').removeClass('hide-nav');
+						$("#slide01").removeClass("hide-div");	
 						$("#slide01").addClass("show-div");
 						$("#content1-slide").addClass("fadeInDownBig");
 						$("#content1-slide").removeClass("fadeOutDownBig");
@@ -74,6 +93,13 @@ new ScrollMagic.Scene({
 					});
 					slider1.triggerHook(0);
 					 // slider1.addIndicators(); // add indicators (requires plugin)
+					 if(ww > 319 && ww <= 415)
+					 {
+					 slider1.duration(300);
+					}
+					else{
+						slider1.duration(600);
+					}
 					slider1.addTo(controller);
 	var slider2 = new ScrollMagic.Scene({triggerElement: "#slide02"});
 					slider2.setClassToggle("#carsl2", "active-nav"); // add class toggle
@@ -105,6 +131,13 @@ new ScrollMagic.Scene({
 						$("#img2-slide").removeClass("zoomIn");
 					});
 					slider2.triggerHook(0);
+					if(ww > 319 && ww <= 415)
+					 {
+					 slider2.duration(200);
+					}
+					else{
+						slider2.duration(600);
+					}
 					// slider2.addIndicators(); // add indicators (requires plugin)
 					slider2.addTo(controller);
 	var slider3 = new ScrollMagic.Scene({triggerElement: "#slide03"});
@@ -141,6 +174,13 @@ new ScrollMagic.Scene({
 					});
 					
 					slider3.triggerHook(0);
+					if(ww > 319 && ww <= 415)
+					 {
+					 slider3.duration(200);
+					}
+					else{
+						slider3.duration(600);
+					}
 					// slider3.addIndicators(); // add indicators (requires plugin)
 					slider3.addTo(controller);
 	var slider4 = new ScrollMagic.Scene({triggerElement: "#slide04"});
@@ -149,7 +189,6 @@ new ScrollMagic.Scene({
 						// $("#slide04").waypoint(function(direction){
 						// if (direction === 'down' || direction === 'up')
 						// {
-						
 						// $("#content4-slide").removeClass("fadeOutDownBig");
 						$("#slide03").removeClass("show-div");
 						$("#slide04").removeClass("hide-div");
@@ -171,10 +210,32 @@ new ScrollMagic.Scene({
 						$("#img4-slide").removeClass("zoomIn");
 					});
 
-					slider4.triggerHook(0.001);
+					slider4.triggerHook(0);
+					if(ww > 319 && ww <= 415)
+					 {
+					 slider4.duration(100);
+					}
+					else{
+						slider4.duration(600);
+					}
 					// slider4.addIndicators(); // add indicators (requires plugin)
+					// slider4.setPin('#slide4', {pushFollowers:false});
 					slider4.addTo(controller);
 	
+		var contact = new ScrollMagic.Scene({triggerElement: "#contact-form"});
+					contact.on("enter", function(e){
+					$('#side-nav').addClass('hide-nav');
+					$('#side-nav').removeClass('show-nav');
+
+					// $("#slide04").removeClass("show-div");
+					// $("#slide04").addClass("hide-div");
+					$('#contact-form').addClass('show-div');
+					$('#contact-form').removeClass('hide-div');
+				});
+					contact.duration(100);
+					contact.triggerHook(1);
+					// contact.addIndicators();
+					contact.addTo(controller);
 
 	// for img in-out
 	// var ctrl_anim= new ScrollMagic.Controller();

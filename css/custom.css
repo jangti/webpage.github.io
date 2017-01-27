@@ -426,9 +426,9 @@ strong{
 	font-family: "avenir", serif;
 	font-size: inherit;
 	animation-delay: 3s;
-	position: relative;
-    /*left: 292px;*/
-    top: 100px;
+	position: absolute;
+    left: 292px;
+    top: 250px;
 }
 #product_brief
 {
@@ -561,6 +561,12 @@ div.navbar-header
 .slide{
 	top: 0 !important;
 }
+#contact-form{
+		background:#ffffff !important;
+		height: 100%;
+		width: 100%;
+
+}
 
 /*media query for tablet*/
 
@@ -655,6 +661,7 @@ div.navbar-header
 	{
 		margin-top: 100px;
 	}
+
 }
 @media (max-width: 767px)
 {
@@ -665,7 +672,7 @@ div.navbar-header
 	
 	#landing-page-in
 	{
-		width: 280px;
+		width: 290px;
 		padding-top: 140px;
 
 
@@ -806,55 +813,57 @@ div.navbar-header
 	}
 	#product_brief .slide
 	{
-		padding-top: 50px;
+		padding-top: 75px;
+		padding-bottom: 15px;
 	}
 	div.slide .brief-img_in img
-	{
-		height: 282px;
-		width: 162px;
-	}
+    {
+        height: 200px;
+        width: 120px;
+    }
 	.slide .desc_product {
 		padding: 10px;
 		margin-top: 15px;
 	}
-	#product_brief .slide
-	{
-		padding-top: 70px;
-	}
+	
 	.slide .desc_product
 	{
 		padding: 10px;
 		margin-top: 10px;
 	}
 	.slide h2.section-heading
-	{
-		margin-bottom: 0px;
-		font-size: 24px;
-		margin-top: 0;
-	}
+    {
+        margin-bottom: 0px;
+        font-size: 20px;
+        margin-top: 0;
+    }
 	.slide .section-heading>span
-	{
-		height: 60px;
-		margin-right: 14px;
-	}
+    {
+        height: 45px;
+        margin-right: 10px;
+    }
 	.slide .section-heading>span>img
-	{
-		width: 37.3px;
-	}
+    {
+        width: 25px;
+        height: 40px;
+    }
 	.slide p.section-paragraph
-	{
-		margin-bottom: 10px;
-		font-size: 12px;
-	}
+    {
+        margin-bottom: 10px;
+        font-size: 9px;
+    }
 	#container3 .brief-img_in img
-	{
-		width: 210px;
-	}
+    {
+        width: 160px;
+    }
+    #container4 .brief-img_in{
+        margin-top: 0;
+    }
 	#container4 .brief-img_in img
-	{
-		width: 282px;
-		height: 171px;
-	}
+    {
+        width: 260px;
+        height: 150px;
+    }
 	.navbar-default .navbar-toggle
 	{
 		border-color: #adadad;
@@ -885,7 +894,8 @@ div.navbar-header
 		background-color: #adadad;
 	}
 	#company-caption{
-		top: 100px;
+		top: 220px;
+		left: calc((280px - 128.16px)/2);
 	}
 
 }
