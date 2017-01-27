@@ -91,13 +91,11 @@ function submitForm(){
 				<div class="intro-text">
 
 					<div id="ck-logo"> 
-						<div class="rect Rectangle-2-Copy breath">
-							<div class="rect1 Rectangle-Copy-4"></div>
-							<div class="rect2 Rectangle-Copy-5"></div>
-							<div class="rect3 Rectangle-Copy-6"></div>
+						<div class="rect Rectangle-2-Copy">
+							<img src="img/dip.png">
 						</div>
 					</div>
- 					<p id="grad-hat" class="fadeInDown animated"><img src="img/Grad-Hat.svg"></p>
+ 					<p id="grad-hat"><img src="img/Grad-Hat.svg"></p>
 					<h2 id="company-title">
 						<span class="animated mk-inline greenclr">C</span>
 						<span class="animated mk-inline greenclr">h</span>
@@ -324,13 +322,21 @@ function submitForm(){
 	})();
 	// Start of Tawk.to Script
       //= shrink and expand the navbar 
-      $(window).bind('scroll', function () {
+      $(window).on('scroll', function () {
       	var wScroll = $(this).scrollTop();
       	console.log(wScroll);
-      	if ($(window).scrollTop() > 5) 
-      	$('#grad-hat img').addClass("flyhat");
-      	else 
-      		$('#grad-hat img').removeClass("flyhat");
+      	if ($(window).scrollTop() > 5) {
+      		var $animationHatElement=$('#grad-hat img');
+      		$animationHatElement.addClass("flyhat");
+      		$animationHatElement.on('webkitAnimationEnd oanimationend msAnimationEnd animationend',function(e) {
+      			$(this).addClass('flyhatfix');
+      			// $(this).removeClass('test1');
+		   });
+      	}
+
+      	else {$('#grad-hat img').removeClass('flyhat flyhatfix')
+      		//$('#grad-hat img').removeClass("flyhat flyhatfix");
+      	}
       	// $('#grad-hat img').css({'transform': 'translate(0px, -'+wScroll*2+'%)'});
       	// $('#company-title').css({'transform': 'translate(0px, '+wScroll+'%)'});
       	// $('#company-caption').css({'transform': 'translate(0px, '+wScroll/wScroll+'%)'});
@@ -342,7 +348,8 @@ function submitForm(){
         	$("div.navbar-left").addClass("navbar-left-tab")
         	$('#ck-logo').addClass('transit');
         	$('.rect').addClass('logo-transit');
-        	$('.rect').removeClass('breath');
+        	// $('.rect').removeClass('breath');
+        	$('#ck-logo img').addClass('logoImgTransit');
         	$('.rect1').addClass('logo-content-transit1');
         	$('.rect2').addClass('logo-content-transit2');
         	$('.rect3').addClass('logo-content-transit3');
@@ -357,7 +364,8 @@ function submitForm(){
 	        $('.navbar').removeClass('shrink');
 	        $('#ck-logo').removeClass('transit');
 	        $('.rect').removeClass('logo-transit');
-	        $('.rect').addClass('breath');
+	        // $('.rect').addClass('breath');
+	        $('#ck-logo img').removeClass('logoImgTransit');
 			$('.rect1').removeClass('logo-content-transit1');
 			$('.rect2').removeClass('logo-content-transit2');
 			$('.rect3').removeClass('logo-content-transit3');

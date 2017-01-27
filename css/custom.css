@@ -31,7 +31,7 @@ body
 }
 #page-menu-collapse li
 {
-	padding:24px 15px;
+	padding:40px 15px;
 }
 #page-menu-collapse li>a
 {
@@ -96,9 +96,9 @@ body
 
 #ck-logo>.breath
 {
-	-moz-box-shadow: 0px 1px 1px #171515;
- 	-webkit-box-shadow: 0px 1px 1px #171515;
-  	box-shadow: 0px 1px 1px #171515;
+	-moz-box-shadow: 0px 1px 1px #f7d464;
+ 	-webkit-box-shadow: 0px 1px 1px #f7d464;
+  	box-shadow: 0px 1px 1px #f7d464;
 	margin:0 auto;
 	animation: breathing 6s linear infinite;
    -ms-animation: breathing 6s linear infinite;
@@ -108,38 +108,38 @@ body
 }
 @-webkit-keyframes breathing {
   0% {
-    -moz-box-shadow: 0px 1px -1px #171515;
-    -webkit-box-shadow: 0px 1px -1px #171515;
-    box-shadow: 0px 1px -1px #171515;
+    -moz-box-shadow: 0px 1px -1px #f7d464;
+    -webkit-box-shadow: 0px 1px -1px #f7d464;
+    box-shadow: 0px 1px -1px #f7d464;
   }
   50% {
-    -moz-box-shadow: 0px 1px 25px #171515;
-    -webkit-box-shadow: 0px 1px 25px #171515;
-    box-shadow: 0px 1px 25px #171515;
+    -moz-box-shadow: 0px 1px 25px #f7d464;
+    -webkit-box-shadow: 0px 1px 25px #f7d464;
+    box-shadow: 0px 1px 25px #f7d464;
   }
 }
 @-moz-keyframes breathing {
   0% {
-    -moz-box-shadow: 0px 1px 1px #171515;
-    -webkit-box-shadow: 0px 1px 1px #171515;
-    box-shadow: 0px 1px 1px #171515;
+    -moz-box-shadow: 0px 1px 1px #f7d464;
+    -webkit-box-shadow: 0px 1px 1px #f7d464;
+    box-shadow: 0px 1px 1px #f7d464;
   }
   50% {
-    -moz-box-shadow: 0px 1px 25px #171515;
-    -webkit-box-shadow: 0px 1px 25px #171515;
-    box-shadow: 0px 1px 25px #171515;
+    -moz-box-shadow: 0px 1px 25px #f7d464;
+    -webkit-box-shadow: 0px 1px 25px #f7d464;
+    box-shadow: 0px 1px 25px #f7d464;
   }
 }
 @keyframes breathing {
   0% {
-    -moz-box-shadow: 0px 1px 1px #dedede;
-    -webkit-box-shadow: 0px 1px 1px #dedede;
-    box-shadow: 0px 1px 1px #dedede;
+    -moz-box-shadow: 0px 1px 1px #f7d464;
+    -webkit-box-shadow: 0px 1px 1px #f7d464;
+    box-shadow: 0px 1px 1px #f7d464;
   }
   50% {
-    -moz-box-shadow: 0px 1px 25px #dedede;
-    -webkit-box-shadow: 0px 1px 25px #dedede;
-    box-shadow: 0px 1px 25px #dedede;
+    -moz-box-shadow: 0px 1px 25px #f7d464;
+    -webkit-box-shadow: 0px 1px 25px #f7d464;
+    box-shadow: 0px 1px 25px #f7d464;
   }
 }
 
@@ -154,14 +154,26 @@ body
     /*left: 275px;*/
     margin:0 auto;
 }
+#ck-logo img{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
 
 .Rectangle-2-Copy {
-  width: 150px;
-  height: 150px;
-  border-radius: 38.4px;
+  width: 200px;
+  height: 130px;
+  border-radius: 25px;
+  /*border:2px dotted #f7d464;*/
   background-color: #ffffff;
   position: relative;
   margin:0 auto;
+  background-image: url("../img/book1.png");
+  background-repeat: no-repeat;
   /*transform: translate(0px,0px);*/
   /*transition: margin 1s;*/
   transition:  width 0.5s, height 0.5s;
@@ -200,27 +212,38 @@ body
 /*translation of logo*/
 #ck-logo.transit
 {
-	height: 50px;
-	width: 50px;
+	/*height: 50px;
+	width: 50px;*/
 	/*transform: translate(-277px,-192px);*/
-	top: 8px;
-	left: 15px;
+	top: 24px;
+    left: 20px;
 	position: fixed;
 	z-index: 1048;
 	transition: transform 0.5s, width 0.5s, height 0.5s;
     -moz-transition:transform 0.5s, width 0.5s, height 0.5s;
     -webkit-transition:transform 0.5s, width 0.5s, height 0.5s;
 }
+#change-container .navbar-left{
+	margin-left: 30px;
+}
+#ck-logo img.logoImgTransit{
+	height: 50px;
+	width: 50px;
+	transform: rotate(-69deg);
+	top: 18%;
+	left: 42%;
+	margin:0;
+}
 #ck-logo .logo-transit
 {
 	height: 50px;
     border-radius: 11px;
-    width: 50px;
-    -moz-box-shadow: 0px 0px 6px #171515;
-    -webkit-box-shadow: 0px 0px 6px #171515;
-    box-shadow: 0px 0px 6px #171515;
-    
-    
+    width: 70px;
+    background-image: url("../img/book2.png");
+    background-repeat: no-repeat;
+    /*-moz-box-shadow: 0px 0px 3px #f7d464;
+    -webkit-box-shadow: 0px 0px 3px #f7d464;
+    box-shadow: 0px 0px 3px #f7d464; */   
 }
 
 #ck-logo .logo-content-transit1
@@ -274,33 +297,29 @@ body
 }
 #grad-hat img.flyhat
 {
-	animation: fly 3s ;
+	animation: fly 1s ;
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1049;
+	transform: rotatez(-40deg);*/
+}
+#grad-hat img.flyhatfix{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1049;
+	transform: rotatez(-40deg);
 }
 @keyframes fly {
-	0%{
-		transform: translate(0px, -20px) rotatez(-180deg);
+	from{
+		transform: translate(0px, 0px) rotatez(-40deg);
 	}
-	/*10%{
-		transform: rotatez(-720deg);
-	}
-	40%
-	{
-		transform: translate(-30px, -100px) rotatez(-720deg);
-	}
-	60%
-	{
-		transform: translate(-40px, -130px) rotatez(-1440deg);
-	}
-	80%
-	{
-		transform: translate(-50px, -170px) rotatez(-2160deg);
-	}*/
-	
-	100%
+	to
 	{
 		/*transform: rotateY(-15deg);*/
-		transform: translate(-200px, -200px) rotatez(-3000deg);
-		opacity: 0;
+		transform: translate(-400px, -400px);
+		
 	}
 
 }
@@ -677,11 +696,11 @@ div.navbar-header
 
 
 	}
-	.Rectangle-2-Copy {
+	/*.Rectangle-2-Copy {
 		width: 100px;
 		height: 100px;
 		border-radius: 20.4px;
-	}
+	}*/
 	.Rectangle-Copy-4 {
 		width: 30px;
 		height: 30px;
@@ -710,7 +729,7 @@ div.navbar-header
 		margin-left: 0;
 		position: relative;
 		left: 0;
-		top: 42px;
+		top: 14px;
 	}
 	#grad-hat img {
 		height: 50px;
@@ -901,16 +920,16 @@ div.navbar-header
 }
 @media (max-width: 767px) and (orientation:landscape){
 	#grad-hat{
-		top: 0;
+		top: -28px;
 	}
 	#company-title{
 		top: 131px;
 	}
 	#company-caption{
-		top: 51px;
+		top: 181px;
 	}
 	#landing-page-in{
-		padding-top: 100px;
+		padding-top: 70px;
 	}
 	.container .col-xs-12
 	{
@@ -1031,4 +1050,37 @@ div.navbar-header
 	{
 		padding-top: 85px;
 	}
+}*/
+
+
+
+/*Delete*/
+
+/*@-webkit-keyframes testq {
+  from {
+ transform: translatex(0px) translatey(0px);
+  }
+
+  to {
+    transform: translatex(-438px) translatey(-339px);
+  }
+}
+
+@keyframes testq {
+  from {
+ transform: translatex(0px) translatey(0px);
+  }
+
+  to {
+    transform: translatex(-438px) translatey(-339px);
+    top: 0px;
+    left:0px;
+    position: fixed;
+    z-index: 2000;
+  }
+}
+
+.test1 {
+  -webkit-animation-name: testq;
+  animation-name: testq;
 }*/
