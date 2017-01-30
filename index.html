@@ -13,7 +13,6 @@
 
 	<!--custom files-->
   	<link rel="stylesheet" type="text/css" href="css/custom.css">
-  	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<!--scrollmagic-->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -37,7 +36,7 @@ function submitForm(){
 	formdata.append( "e", _("e").value );
 	formdata.append( "m", _("m").value );
 	var ajax = new XMLHttpRequest();
-	ajax.open( "POST", "http://localhost/php/testmail.php" );
+	ajax.open( "POST", "testmail.php" );
 	ajax.onreadystatechange = function() {
 		if(ajax.readyState == 4 && ajax.status == 200) {
 			if(ajax.responseText == "success"){
@@ -79,7 +78,7 @@ function submitForm(){
 					<div class="navbar-right">
 						<ul class="nav navbar-nav">
 							<li><a data-scroll href="#price">Log in</a></li>
-							<li><a href="http://demo.chalkkeeper.com/">Try Now</a></li>
+							<li><a href="http://play.chalkkeeper.com/">Try Now</a></li>
 						</ul>
 					</div>
 				</div><!-- .navbar-collapse -->
@@ -91,11 +90,13 @@ function submitForm(){
 				<div class="intro-text">
 
 					<div id="ck-logo"> 
-						<div class="rect Rectangle-2-Copy">
-							<img src="img/dip.png">
+						<div class="rect Rectangle-2-Copy breath">
+							<div class="rect1 Rectangle-Copy-4"></div>
+							<div class="rect2 Rectangle-Copy-5"></div>
+							<div class="rect3 Rectangle-Copy-6"></div>
 						</div>
 					</div>
- 					<p id="grad-hat"><img src="img/Grad-Hat.svg"></p>
+ 					<p id="grad-hat" class="fadeInDown animated"><img src="img/Grad-Hat.svg"></p>
 					<h2 id="company-title">
 						<span class="animated mk-inline greenclr">C</span>
 						<span class="animated mk-inline greenclr">h</span>
@@ -131,7 +132,6 @@ function submitForm(){
 	    	
 	    </ul>
 	    <section style="padding:0" class="product_brief" id="product_brief">
-	    	<div id="shrinkOut_img1"></div>
 	    	<div class="slide hide-div" id="slide01">
 	    		
 		    	<div class="container scroll_container" id="container1">
@@ -139,7 +139,7 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated" id="img1-slide" src="img/iphone-silver.png" alt="">
+		    					<img class="animated img-slide img-responsive" id="img1-slide" src="img/iphone-silver.png" alt="">
 
 		    				</div>
 
@@ -159,15 +159,14 @@ function submitForm(){
 		    	</div><!-- .container -->
 		    	<div id="shrinkIn_img1"></div>
 	    	</div>
-	    	<div id="shrinkOut_img2"></div>
-	    	<div class="slide hide-div" id="slide02">
+	    	<div class="slide " id="slide02">
 	    		
 		    	<div class="container scroll_container" id="container2">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated" id="img2-slide" src="img/android.png" alt="">
+		    					<img class="animated img-slide img-responsive" id="img2-slide" src="img/android.png" alt="">
 
 		    				</div> 
 
@@ -185,17 +184,15 @@ function submitForm(){
 		    			</div><!-- #brief-text -->
 		    		</div><!--row-->
 		    	</div><!-- .container -->
-		    	<div id="shrinkIn_img2"></div>
 		    </div>
-		    <div id="shrinkOut_img3"></div>
-		    <div class="slide hide-div" id="slide03">
+		    <div class="slide " id="slide03">
 		    	
 		    	<div class="container scroll_container" id="container3">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated" id="img3-slide" src="img/android-tablet.png" alt="">
+		    					<img class="animated img-slide img-responsive" id="img3-slide" src="img/android-tablet.png" alt="">
 
 		    				</div>
 
@@ -213,17 +210,15 @@ function submitForm(){
 		    			</div><!-- #brief-text -->
 		    		</div><!--row-->
 		    	</div><!-- .container -->
-		    	<div id="shrinkIn_img3"></div>
 		    </div>
-		    <div id="shrinkOut_img4"></div>
-		    <div class="slide hide-div" id="slide04">
+		    <div class="slide " id="slide04">
 		    	
 		    	<div class="container scroll_container" id="container4">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
 		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated" id="img4-slide" src="img/macbook.png" alt="">
+		    					<img class="animated img-slide img-responsive" id="img4-slide" src="img/macbook.png" alt="">
 
 		    				</div>
 
@@ -243,52 +238,14 @@ function submitForm(){
 		    	</div><!-- .container -->
 		    	<div id="shrinkIn_img4"></div>
 	    	</div>
-	    	<div id="contact-form" class="slide hide-div">
-	    		<div class="container">
-				<div class="row main">
-					<div class="main-login main-center">
-					<h5>Ask Queries</h5>
-						<form class="" method="post" action="#">
-							
-							<div class="form-group">
-								<label for="name" class="cols-sm-2 control-label">Your Name</label>
-								<div class="cols-sm-10">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-										<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-									</div>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label for="email" class="cols-sm-2 control-label">Your Email</label>
-								<div class="cols-sm-10">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-										<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-									</div>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label for="email" class="cols-sm-2 control-label">Your Question</label>
-								<div class="cols-sm-10">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-										<input type="text" class="form-control" name="email" id="email"  placeholder="Your Question"/>
-									</div>
-								</div>
-							</div>
-							
-							<div class="form-group ">
-								<a href="http://deepak646.blogspot.in" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Send</a>
-							</div>
-							
-						</form>
-					</div>
-				</div>
-			</div>
-	    	</div>
+	    	<!-- <div id="contact-form" class="slide ">
+	    		<form id="my_form" onsubmit="submitForm(); return false;">
+	  				<p><input id="n" placeholder="Name" required></p>
+	  				<p><input id="e" placeholder="Email Address" type="email" required></p>
+	  				<textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+	  				<p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+				</form>
+	    	</div> -->
 	    </section>
 
 	   <!-- <h1>hi</h1> -->
@@ -302,7 +259,9 @@ function submitForm(){
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-  <script type="text/javascript" src="css/animation.gsap.js"></script>
+  <script type="text/javascript" src="js/animation.gsap.js"></script>
+  <script type="text/javascript" src="js/velocity.min.js"></script>
+  <script type="text/javascript" src="js/animation.velocity.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript">
 
@@ -322,21 +281,13 @@ function submitForm(){
 	})();
 	// Start of Tawk.to Script
       //= shrink and expand the navbar 
-      $(window).on('scroll', function () {
+      $(window).bind('scroll', function () {
       	var wScroll = $(this).scrollTop();
-      	console.log(wScroll);
-      	if ($(window).scrollTop() > 5) {
-      		var $animationHatElement=$('#grad-hat img');
-      		$animationHatElement.addClass("flyhat");
-      		$animationHatElement.on('webkitAnimationEnd oanimationend msAnimationEnd animationend',function(e) {
-      			$(this).addClass('flyhatfix');
-      			// $(this).removeClass('test1');
-		   });
-      	}
-
-      	else {$('#grad-hat img').removeClass('flyhat flyhatfix')
-      		//$('#grad-hat img').removeClass("flyhat flyhatfix");
-      	}
+      	//console.log(wScroll);
+      	if ($(window).scrollTop() > 5) 
+      	$('#grad-hat img').addClass("flyhat");
+      	else 
+      		$('#grad-hat img').removeClass("flyhat");
       	// $('#grad-hat img').css({'transform': 'translate(0px, -'+wScroll*2+'%)'});
       	// $('#company-title').css({'transform': 'translate(0px, '+wScroll+'%)'});
       	// $('#company-caption').css({'transform': 'translate(0px, '+wScroll/wScroll+'%)'});
@@ -348,8 +299,7 @@ function submitForm(){
         	$("div.navbar-left").addClass("navbar-left-tab")
         	$('#ck-logo').addClass('transit');
         	$('.rect').addClass('logo-transit');
-        	// $('.rect').removeClass('breath');
-        	$('#ck-logo img').addClass('logoImgTransit');
+        	$('.rect').removeClass('breath');
         	$('.rect1').addClass('logo-content-transit1');
         	$('.rect2').addClass('logo-content-transit2');
         	$('.rect3').addClass('logo-content-transit3');
@@ -364,8 +314,7 @@ function submitForm(){
 	        $('.navbar').removeClass('shrink');
 	        $('#ck-logo').removeClass('transit');
 	        $('.rect').removeClass('logo-transit');
-	        // $('.rect').addClass('breath');
-	        $('#ck-logo img').removeClass('logoImgTransit');
+	        $('.rect').addClass('breath');
 			$('.rect1').removeClass('logo-content-transit1');
 			$('.rect2').removeClass('logo-content-transit2');
 			$('.rect3').removeClass('logo-content-transit3');
@@ -375,9 +324,9 @@ function submitForm(){
       		$('#slide-nav').addClass('show-nav');
       		$('#slide-nav').removeClass('hide-nav');
       	}
-      	else{
+      	else
       		$('#slide-nav').removeClass('show-nav');
-      		$('#slide-nav').addClass('hide-nav');}
+      		$('#slide-nav').addClass('hide-nav');
       });
 
       //= autoplay the video when the modal show up
