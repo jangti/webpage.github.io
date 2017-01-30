@@ -1045,9 +1045,9 @@ div.navbar-header
 .zero-opacity{
 	opacity: 0;
 }
-/*.brief-img_in img{   
+.brief-img_in img{   
 	
 	height: calc(100% - 50%);
     margin: 0 auto;
     display: block;
-}*/
+}
