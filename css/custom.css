@@ -571,6 +571,16 @@ div.navbar-header
 	position: relative;
 	/*width: 400px;*/
 }
+.brief-img_in img{   
+
+	height: calc(100% - 5%);
+    margin: 0 auto;
+    display: block;
+}
+#container4 .brief-img_in
+	{
+		height: calc(100% - 50%);
+	}
 /*#slide01, #slide03{
 	background:#127de3 !important;
 }
@@ -907,6 +917,9 @@ div.navbar-header
 		top: 220px;
 		left: calc((280px - 128.16px)/2);
 	}
+	.brief-img_in img {
+    height: calc(100% - 50%);
+}
 
 }
 @media (max-width: 767px) and (orientation:landscape){
@@ -1044,10 +1057,4 @@ div.navbar-header
 }*/
 .zero-opacity{
 	opacity: 0;
-}
-.brief-img_in img{   
-	
-	height: calc(100% - 50%);
-    margin: 0 auto;
-    display: block;
 }

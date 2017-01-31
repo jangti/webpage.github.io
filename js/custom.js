@@ -2,7 +2,8 @@
 (function($) {
 	    var controller = new ScrollMagic.Controller();
  var updateBox=function(e){
- 	var $slideParentElement = $(e.currentTarget.triggerElement()),
+ 				var $slideParentElement = $(e.currentTarget.triggerElement()),
+ 					$slidePrevSibling = $($slideParentElement).parent().next('.scrollmagic-pin-spacer'),
 	 		 		$prevParentElement=$('.container.scroll_container',$slideParentElement).closest('.scrollmagic-pin-spacer').prev('.scrollmagic-pin-spacer'),
 	 		 		$nextParentElement=$('.container.scroll_container',$slideParentElement).closest('.scrollmagic-pin-spacer').next('.scrollmagic-pin-spacer'),
 	 		 		$slidePrevImg = $('.brief-img_in img' ,$prevParentElement),
@@ -10,9 +11,17 @@
 	 		 		$slideImg = $('.brief-img_in img', $slideParentElement),	 
 	 		 		$slideContent = $('.desc_product',$slideParentElement),
 	 		 		$slideNextImg = $('.brief-img_in img' ,$nextParentElement),
-	 		 		$slideNextContent = $('.desc_product' ,$nextParentElement);	
+	 		 		$slideNextContent = $('.desc_product' ,$nextParentElement),
+	 		 		$slideNav = $("#slide-nav"),	
+	 		 		$getParentId = $slideParentElement.attr('id'),
+	 		 		$getprevParentId = $slidePrevSibling.attr('id');
+	 		 		console.log($slidePrevSibling);
 console.log(e.type)
-				if(e.type==="enter"){
+					// console.log($getParentId);
+
+					if(e.type==="enter"){
+					$slideNav.removeClass('hide-nav');
+					$slideNav.addClass('show-nav');
 					
 					$slideParentElement.removeClass('hide-div');
 			 		$('.container.scroll_container').addClass('zero-opacity');
@@ -26,8 +35,25 @@ console.log(e.type)
 					$slidePrevImg.removeClass("zoomIn");
 					$slidePrevImg.addClass("zoomOut");	
 			 		$('.container.scroll_container',e.currentTarget.triggerElement()).removeClass('zero-opacity');
+			 		for(var i=1;i<=4;i++){
+
+						if($getParentId == "slide0"+i)
+						{
+							$('#slide-nav a').removeClass('active-nav');
+							$('#carsl'+i).addClass('active-nav');
+							// return;
+						}
+						// $('#carsl'+i).off().on('click',function(e){
+						// 	e.preventDefault();
+						// 	$('#carsl'+i).addClass('active-nav');
+						// });
+					}
 			 	}
 			 	if(e.type==="leave"){
+			 		// console.log($getprevParentId);
+			 			$slideNav.removeClass('hide-nav');
+						$slideNav.addClass('show-nav');
+
 						$slideContent.removeClass("fadeInDownBig");
 						$slideContent.addClass("fadeOutDownBig");
 						$slideImg .removeClass("zoomIn");
@@ -37,54 +63,47 @@ console.log(e.type)
 						$slidePrevContent.removeClass("fadeOutDownBig");
 						$slidePrevImg.addClass("zoomIn");
 						$slidePrevImg.removeClass("zoomOut");	
-					 	$('.container.scroll_container',$prevParentElement).removeClass('zero-opacity');					 		
+					 	$('.container.scroll_container',$prevParentElement).removeClass('zero-opacity');
+					 	for(var i=1;i<=4;i++){
+							// console.log($getParentId );
+						if($getParentId == "slide0"+i)
+							{
+								i= i-1;
+								$('#slide-nav a').removeClass('active-nav');
+								$('#carsl'+i).addClass('active-nav');
+								return;
+							}
+							// $('#carsl'+i).click(function(){
+							// $('#carsl'+i).addClass('active-nav');
+							// });
+						}
 			 	}
 	}
 
-	var someFunc=function(controller){
-		var slider1 = new ScrollMagic.Scene({triggerElement: "#slide01"});
-					// var tween1 = new TimelineLite();
-					// tween1.from("#img1-slide" ,0.4, {scale: 0});
-					// tween1.from("#content1-slide",0.4, {top: -700, opacity: 0},'-=0.4');
-					slider1.addIndicators(); 
-					slider1.setPin("#slide01");
-					slider1.on("enter leave",updateBox);
-					//slider1.setTween(tween1);
-					
-					slider1.addTo(controller);
-	var slider2 = new ScrollMagic.Scene({triggerElement: "#slide02"});
-					// var tween2 = new TimelineLite();
-					// tween2.from("#img2-slide" ,0.4, {scale: 0});
-					// tween2.from("#content2-slide",0.4, {top: -700, opacity: 0},'-=0.4');
-					slider2.addIndicators(); 
-					//slider2.setTween(tween2);
-					slider2.on("enter leave", updateBox);
-					//slider2.triggerHook(0.3);
-					slider2.setPin("#slide02");
-					slider2.addTo(controller);
-	var slider3 = new ScrollMagic.Scene({triggerElement: "#slide03"});
-					// var tween3 = new TimelineLite();
-					// tween3.from("#img3-slide" ,0.4, {scale: 0});
-					
-					// tween3.from("#content3-slide", 0.4, {top: -700, opacity: 0},'-=0.4');
-					//slider3.setTween(tween3);
-					slider3.addIndicators(); 
-					// slider3.triggerHook(0.3);
-					slider3.on("enter leave", updateBox);
-					slider3.setPin("#slide03");
-					slider3.addTo(controller);
-	var slider4 = new ScrollMagic.Scene({triggerElement: "#slide04"});
-					// var tween4 = new TimelineLite();
-					// tween4.from("#img4-slide" ,0.4, {scale: 0});
+	var initScrollMagic=function(controller){
+			$.each($('.slide'),function(index,widget){
+					var elementId="#"+$(widget).attr('id'),
+						scene = new ScrollMagic.Scene({triggerElement: elementId,triggerHook: "onStart"});
+						scene.addIndicators(); 
+						scene.on("enter leave",updateBox);
+						scene.setPin(elementId);
+						scene.addTo(controller);
+			});
+	
 
-					// tween4.from("#content4-slide", 0.4, {top: -700, opacity: 0},'-=0.4');
-					slider4.addIndicators(); 
-					//slider4.setTween(tween4);
-					//slider4.triggerHook(0.3);
-					slider4.on("enter leave", updateBox);
-					slider4.setPin("#slide04");
-					slider4.addTo(controller);
-	}
-		someFunc(controller);
+				//  bind scroll to anchor links
+			$('#slide-nav').find('a.indicator-link').on("click", function (e) {
+					var id = $(this).attr("href");
+					if ($(id).length > 0) {
+							e.preventDefault();
+							controller.scrollTo(id);
+							if (window.history && window.history.pushState) {
+									history.pushState("", document.title, id);
+							}
+					}
+			});
+		}
+
+		initScrollMagic(controller);
 
 })(jQuery);
