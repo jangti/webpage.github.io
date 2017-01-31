@@ -1,8 +1,12 @@
 <html lang="en" id="home">
 <head>
   	<title>Chalk Keeper</title>
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui" id="viewport"/>
+   	<meta name="apple-mobile-web-app-capable" content="yes" />
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   	<meta name="format-detection" content="telephone=no">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	
   	
   	<!-- lib files -->
@@ -132,7 +136,7 @@ function submitForm(){
 	    	
 	    </ul>
 	    <section style="padding:0" class="product_brief" id="product_brief">
-	    	<div class="slide hide-div" id="slide01">
+	    	<div class="slide fade-mobile hide-div" id="slide01">
 	    		
 		    	<div class="container scroll_container" id="container1">
 		    		<div class="row">
@@ -159,7 +163,7 @@ function submitForm(){
 		    	</div><!-- .container -->
 		    	<div id="shrinkIn_img1"></div>
 	    	</div>
-	    	<div class="slide " id="slide02">
+	    	<div class="slide fade-mobile" id="slide02">
 	    		
 		    	<div class="container scroll_container" id="container2">
 		    		<div class="row">
@@ -185,7 +189,7 @@ function submitForm(){
 		    		</div><!--row-->
 		    	</div><!-- .container -->
 		    </div>
-		    <div class="slide " id="slide03">
+		    <div class="slide fade-mobile" id="slide03">
 		    	
 		    	<div class="container scroll_container" id="container3">
 		    		<div class="row">
@@ -211,7 +215,7 @@ function submitForm(){
 		    		</div><!--row-->
 		    	</div><!-- .container -->
 		    </div>
-		    <div class="slide " id="slide04">
+		    <div class="slide fade-mobile" id="slide04">
 		    	
 		    	<div class="container scroll_container" id="container4">
 		    		<div class="row">
@@ -236,7 +240,7 @@ function submitForm(){
 		    			</div><!-- #brief-text -->
 		    		</div><!--row-->
 		    	</div><!-- .container -->
-		    	<div id="shrinkIn_img4"></div>
+		    	
 	    	</div>
 	    	<!-- <div id="contact-form" class="slide ">
 	    		<form id="my_form" onsubmit="submitForm(); return false;">
@@ -246,6 +250,13 @@ function submitForm(){
 	  				<p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
 				</form>
 	    	</div> -->
+	    	<a class="prev" href="javascript:void(0)" onclick="plusSlides(-1); return false">❮</a>
+				<a class="next" href="javascript:void(0)" onclick="plusSlides(-1); return false">❯</a>
+				<div class="dot-parent" style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1);"></span> 
+				  <span class="dot" onclick="currentSlide(2);"></span> 
+				  <span class="dot" onclick="currentSlide(3);"></span> 
+				</div>
 	    </section>
 
 	   <!-- <h1>hi</h1> -->
@@ -260,8 +271,8 @@ function submitForm(){
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
   <script type="text/javascript" src="js/animation.gsap.js"></script>
-  <script type="text/javascript" src="js/velocity.min.js"></script>
-  <script type="text/javascript" src="js/animation.velocity.js"></script>
+  <!-- <script type="text/javascript" src="js/velocity.min.js"></script>
+  <script type="text/javascript" src="js/animation.velocity.js"></script> -->
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript">
 
@@ -353,10 +364,24 @@ function submitForm(){
 
       //= initialize smooth scroll plugin
       smoothScroll.init({
-        offset: 60,
-        speed: 1000,
-        updateURL: false
-      });
+	        offset: 60,
+	        speed: 1000,
+	        updateURL: false
+	      });
+      // if ($(window).width()>320 && $(window).width()<767) {
+	     //  smoothScroll.init({
+	     //    offset: 60,
+	     //    speed: 50,
+	     //    updateURL: false
+	     //  });
+	     // }
+	     // else{
+	     // 	smoothScroll.init({
+	     //    offset: 60,
+	     //    speed: 1000,
+	     //    updateURL: false
+	     //  });
+	     // }
 
       // initializing owlCarousel
       // $("#owl-slider").owlCarousel({

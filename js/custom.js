@@ -1,6 +1,32 @@
+var slideIndex = 1;
+function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
 
-(function($) {
-	    var controller = new ScrollMagic.Controller();
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slide");
+				var dots = $('.dot');//document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+					if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+						for (i = 0; i < dots.length; i++) {
+							var $dotElement=$(dots[i]);
+							$dotElement.attr('class','active');
+							//dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";  
+						$(dots[slideIndex-1]).attr('class','active');
+					}
+$(document).ready(function(){
+		    var controller = new ScrollMagic.Controller();
+	    ww = $(window).width();
  var updateBox=function(e){
  				var $slideParentElement = $(e.currentTarget.triggerElement()),
  					$slidePrevSibling = $($slideParentElement).parent().next('.scrollmagic-pin-spacer'),
@@ -87,11 +113,16 @@ console.log(e.type)
 	var initScrollMagic=function(controller){
 			$.each($('.slide'),function(index,widget){
 					var elementId="#"+$(widget).attr('id'),
-						scene = new ScrollMagic.Scene({triggerElement: elementId,triggerHook: "onStart"});
+						scene = new ScrollMagic.Scene({triggerElement: elementId});
 						scene.addIndicators(); 
 						scene.on("enter leave",updateBox);
+						// alert($(window).width());
+						// if($(window).width()>320 && $(window).width()>767)
+						// {scene.triggerHook('1');}
+						// else{scene.triggerHook('0.5');}
 						scene.setPin(elementId);
 						scene.addTo(controller);
+
 			});
 	
 
@@ -107,7 +138,15 @@ console.log(e.type)
 					}
 			});
 		}
+		if (ww>320 && ww<=767){
+			//var slideIndex = 1;
+			showSlides(slideIndex);
 
-		initScrollMagic(controller);
+			
 
-})(jQuery);
+				}
+		else{
+			initScrollMagic(controller);
+	}
+	
+});
