@@ -20,8 +20,8 @@ console.log(e.type)
 					// console.log($getParentId);
 
 					if(e.type==="enter"){
-					$slideNav.removeClass('hide-nav');
-					$slideNav.addClass('show-nav');
+					$($slideNav).removeClass('hide-nav').addClass('show-nav');
+					//$($slideNav).addClass('show-nav');
 					
 					$slideParentElement.removeClass('hide-div');
 			 		$('.container.scroll_container').addClass('zero-opacity');
@@ -71,6 +71,10 @@ console.log(e.type)
 								i= i-1;
 								$('#slide-nav a').removeClass('active-nav');
 								$('#carsl'+i).addClass('active-nav');
+								if ($getParentId == "slide01") {
+									$slideNav.removeClass('show-nav');
+									$slideNav.addClass('hide-nav');
+								}
 								return;
 							}
 							// $('#carsl'+i).click(function(){
