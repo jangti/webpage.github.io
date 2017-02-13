@@ -114,7 +114,7 @@ console.log(e.type)
 			$.each($('.slide'),function(index,widget){
 					var elementId="#"+$(widget).attr('id'),
 						scene = new ScrollMagic.Scene({triggerElement: elementId});
-						scene.addIndicators(); 
+						// scene.addIndicators(); 
 						scene.on("enter leave",updateBox);
 						// alert($(window).width());
 						// if($(window).width()>320 && $(window).width()>767)
