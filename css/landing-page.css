@@ -107,10 +107,13 @@ section {
     border-bottom: none; }
 
 .navbar-default.shrink {
-  background: #fff;
+  background: #0089F1;
+  background-image: linear-gradient(-180deg, #00BEFA 0%, #0089F1 54%);
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.08);
   border-bottom: none;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); }
+  /*-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);*/
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); }*/
   .navbar-default.shrink .navbar-brand {
     color: #188ae2; }
   .navbar-default.shrink .navbar-nav > li > a {

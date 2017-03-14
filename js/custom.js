@@ -55,13 +55,13 @@ console.log(e.type)
 					$slideContent.removeClass("fadeOutDownBig");
 					$slideImg .addClass("zoomIn");
 					$slideImg .removeClass("zoomOut");
-
+					
 					$slidePrevContent.removeClass(" fadeInDownBig");
 					$slidePrevContent.addClass("fadeOutDownBig");
 					$slidePrevImg.removeClass("zoomIn");
 					$slidePrevImg.addClass("zoomOut");	
 			 		$('.container.scroll_container',e.currentTarget.triggerElement()).removeClass('zero-opacity');
-			 		for(var i=1;i<=4;i++){
+			 		for(var i=1;i<=5;i++){
 
 						if($getParentId == "slide0"+i)
 						{
@@ -121,6 +121,7 @@ console.log(e.type)
 						// {scene.triggerHook('1');}
 						// else{scene.triggerHook('0.5');}
 						scene.setPin(elementId);
+						// scene.triggerHook(0);
 						scene.addTo(controller);
 
 			});
