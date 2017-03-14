@@ -51,13 +51,13 @@ console.log(e.type)
 					
 					$slideParentElement.removeClass('hide-div');
 			 		$('.container.scroll_container').addClass('zero-opacity');
-			 		$slideContent.addClass("fadeInDownBig");
-					$slideContent.removeClass("fadeOutDownBig");
+			 		$slideContent.addClass("fadeInRight");
+					$slideContent.removeClass("fadeOutRight");
 					$slideImg .addClass("zoomIn");
 					$slideImg .removeClass("zoomOut");
 					
-					$slidePrevContent.removeClass(" fadeInDownBig");
-					$slidePrevContent.addClass("fadeOutDownBig");
+					$slidePrevContent.removeClass(" fadeInRight");
+					$slidePrevContent.addClass("fadeOutRight");
 					$slidePrevImg.removeClass("zoomIn");
 					$slidePrevImg.addClass("zoomOut");	
 			 		$('.container.scroll_container',e.currentTarget.triggerElement()).removeClass('zero-opacity');
@@ -80,13 +80,13 @@ console.log(e.type)
 			 			$slideNav.removeClass('hide-nav');
 						$slideNav.addClass('show-nav');
 
-						$slideContent.removeClass("fadeInDownBig");
-						$slideContent.addClass("fadeOutDownBig");
+						$slideContent.removeClass("fadeInRight");
+						$slideContent.addClass("fadeOutRight");
 						$slideImg .removeClass("zoomIn");
 						$slideImg .addClass("zoomOut");
 
-						$slidePrevContent.addClass("fadeInDownBig");
-						$slidePrevContent.removeClass("fadeOutDownBig");
+						$slidePrevContent.addClass("fadeInRight");
+						$slidePrevContent.removeClass("fadeOutRight");
 						$slidePrevImg.addClass("zoomIn");
 						$slidePrevImg.removeClass("zoomOut");	
 					 	$('.container.scroll_container',$prevParentElement).removeClass('zero-opacity');
@@ -125,7 +125,16 @@ console.log(e.type)
 						scene.addTo(controller);
 
 			});
-	
+	var nav_hide = new ScrollMagic.Controller();
+			var nav_scene = new ScrollMagic.Scene({triggerElement:'#slide06'});
+			nav_scene.on('enter', function(){
+				$('#slide-nav').removeClass('show-nav').addClass('hide-nav');
+			});
+			nav_scene.on('leave', function(){
+				$('#slide-nav').removeClass('hide-nav').addClass('show-nav');
+			});
+			nav_scene.triggerHook(0.7);
+			nav_scene.addTo(nav_hide);
 
 				//  bind scroll to anchor links
 			$('#slide-nav').find('a.indicator-link').on("click", function (e) {

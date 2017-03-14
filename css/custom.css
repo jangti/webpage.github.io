@@ -449,7 +449,7 @@ strong{
 {
 	height: 100%;
 	padding-top: 127px;
-	
+	overflow-x: hidden;
 	/*background-image: url('../img/bg1.jpg');*/
 	/*background-color:transparent;*/
 }
@@ -696,7 +696,7 @@ div.navbar-header
           border-radius: 4px;
 }
 #slide06{
-	padding:30px 20px 30px 50px;
+	padding:130px 20px 30px 50px;
 	padding-left: 40%;
 	height: 100%;
 	width: 100%;
