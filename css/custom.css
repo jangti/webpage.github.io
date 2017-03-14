@@ -443,12 +443,15 @@ strong{
 #product_brief
 {
 	height: 100%;
+	background: #00c3fd;
 }
 #product_brief .slide
 {
 	height: 100%;
 	padding-top: 127px;
-	background-color:transparent;
+	
+	/*background-image: url('../img/bg1.jpg');*/
+	/*background-color:transparent;*/
 }
 /*#product_brief .slide:nth-child(2n-1)
 {
