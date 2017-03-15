@@ -1373,7 +1373,9 @@ div.navbar-header
 	#contact-us{
 		height: 100%;
 	}
-
+	#contact-us h4{
+		border:1px solid blue;
+	}
 }
 @media (max-width: 767px) and (orientation:landscape){
 	#grad-hat{
