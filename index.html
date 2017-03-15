@@ -24,7 +24,8 @@
  
     <!-- Include ScrollMagic -->
     <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
-    
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/e1aa2ba9d2.js"></script>
 	<style type="text/css"> .wrapper{opacity: 1 !important;}</style>
 	<script>
 function _(id){ return document.getElementById(id); }
@@ -308,7 +309,7 @@ function submitForm(){
     						<p>Content writer lines</p>
     					</div>
     					<div class="col-md-2 col-xs-2">
-    						<a href="">Try Now</a>
+    						<a href="http://demo.chalkkeeper.com/login">Try Now</a>
     					</div>
     				</div>
     			</div>
@@ -341,20 +342,25 @@ function submitForm(){
 	    			<div class="col-md-3">
 	    				<h4>Newsletter</h4>
 	    				<p>Subscribe to our newsletter and get all the cool news</p>
-	    				<input type="text" name="contact-email">
+	    				<div class="input-group" id="customer_mail">
+					      <input type="text" class="form-control" placeholder="Enter Email">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+					      </span>
+					    </div><!-- /input-group -->
 	    			</div>
 	    		</div>
-	    		<hr>
+	    		<hr style="background:#EEF1EC;">
 	    		<div class="row">
 	    			<div class="col-md-3 col-md-offset-1">
 	    				<h5>All rights reserved</h5>
 	    			</div> 
-	    			<div class="col-md-3 col-md-4">
-	    				<a href=""></a>
-	    				<a href=""></a>
-	    				<a href=""></a>
-	    				<a href=""></a>
-	    				<a href=""></a>
+	    			<div class="col-md-3 col-md-offset-4">
+	    				<a id="contact_tw" class="btn btn-default" href="#" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	    				<a id="contact_fb" class="btn btn-default" href="#" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	    				<a id="contact_in" class="btn btn-default" href="#" role="button"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	    				<a id="contact_dr" class="btn btn-default" href="#" role="button"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+	    				<a id="contact_gi" class="btn btn-default" href="#" role="button"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
 	    			</div>
 	    		</div>
 	    	</div>

@@ -775,7 +775,7 @@ div.navbar-header
 	height: 100%;
 	margin:0 auto;
 	box-shadow: 0 0 3px 1px #efefef;
-	background: #fff;
+	background: rgba(255, 255, 255, 0.59);
 	border-radius: 10px;
 	padding:10px;
 }
@@ -802,6 +802,34 @@ div.navbar-header
 	color: #171717;
 	position: relative;
 	padding:10px;
+	font-family: "roboto";
+}
+#contact-us p{
+	color:#171717;
+}
+#contact-us a.btn-default{
+	border-radius: 50%;
+}
+#contact-us a.btn-default > i{
+	color: #ffffff;
+}
+#contact_tw{
+	background: #55ACEE;
+}
+#contact_fb{
+	background: #3B5998;
+}
+#contact_in{
+	background: #3F729B;
+}
+#contact_dr{
+	background: #EA4C89;
+}
+#contact_gi{
+	background: #333333;
+}
+#contact-us h4{
+	margin-bottom: 15px;
 }
 #slide01, #slide02, #slide03, #slide04, #slide05, #slide06, #slide07 {
 	position: relative;
@@ -864,6 +892,9 @@ div.navbar-header
 	}
 #slide05 .brief-img_in img{
 	height: auto;
+}
+#customer_mail button, #contact-us a.btn-default{
+	padding:9px 12px;
 }
 /*media query for tablet*/
 
