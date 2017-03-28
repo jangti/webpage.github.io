@@ -1,0 +1,116 @@
+<html lang="en" id="home">
+<head>
+  	<title>Chalk Keeper</title>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui" id="viewport"/>
+   	<meta name="apple-mobile-web-app-capable" content="yes" />
+   	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   	<meta name="format-detection" content="telephone=no">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	
+  	
+  	<!-- lib files -->
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/landing-page.css">
+
+	<!--custom files-->
+  	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!--scrollmagic-->
+
+	<!-- <script src="js/jquery.js"></script> -->
+	<!-- <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script> -->
+ 
+    <!-- Include ScrollMagic -->
+    <!-- <script type="text/javascript" src="js/ScrollMagic.min.js"></script> -->
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/e1aa2ba9d2.js"></script>
+	<style type="text/css"> .wrapper{opacity: 1 !important;}</style>
+</head>
+<body style="overflow-y: auto;">
+	<div id="careers">
+		<div style="text-align: center; width: 100%;"><h1>Careers</h1></div>
+		<p>At Chalkkeeper, we’re looking for creative thinking white hat hackers who can align disruptive technologies to design and develop applications that solve real-world problems. If you’re interested in driving the next big technological revolution, then this is where you should be.</p>
+		<div class="fade-mobile">
+			<div id="page-wrapper">
+			<h2><span>Write here</span></h2>
+
+				<div id="form-messages"></div>
+
+				<form id="ajax-contact" method="post" action="mailer.php">
+					<div class="field">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+
+					<div class="field">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<div class="field">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" required></textarea>
+					</div>
+
+					<div class="field">
+						<button type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+    // Get the form.
+    var form = $('#ajax-contact');
+
+    // Get the messages div.
+    var formMessages = $('#form-messages');
+
+    // TODO: The rest of the code will go here...
+    // Set up an event listener for the contact form.
+	$(form).submit(function(event) {
+	    // Stop the browser from submitting the form.
+	    event.preventDefault();
+
+	    // TODO
+	    // Serialize the form data.
+		var formData = $(form).serialize();
+		// Submit the form using AJAX.
+		$.ajax({
+		    type: 'POST',
+		    url: $(form).attr('action'),
+		    data: formData
+		})
+		.done(function(response) {
+		    // Make sure that the formMessages div has the 'success' class.
+		    $(formMessages).removeClass('error');
+		    $(formMessages).addClass('success');
+
+		    // Set the message text.
+		    $(formMessages).text(response);
+
+		    // Clear the form.
+		    $('#name').val('');
+		    $('#email').val('');
+		    $('#message').val('');
+		})
+		.fail(function(data) {
+		    // Make sure that the formMessages div has the 'error' class.
+		    $(formMessages).removeClass('success');
+		    $(formMessages).addClass('error');
+
+		    // Set the message text.
+		    if (data.responseText !== '') {
+		        $(formMessages).text(data.responseText);
+		    } else {
+		        $(formMessages).text('Oops! An error occured and your message could not be sent.');
+		    }
+		});
+	});
+});
+	</script>
+</body>

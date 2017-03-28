@@ -26,7 +26,7 @@ function plusSlides(n) {
 					}
 $(document).ready(function(){
 		    var controller = new ScrollMagic.Controller();
-	    ww = $(window).width();
+	    var ww = $(window).width();
  var updateBox=function(e){
  				var $slideParentElement = $(e.currentTarget.triggerElement()),
  					$slidePrevSibling = $($slideParentElement).parent().next('.scrollmagic-pin-spacer'),
@@ -51,17 +51,17 @@ console.log(e.type)
 					
 					$slideParentElement.removeClass('hide-div');
 			 		$('.container.scroll_container').addClass('zero-opacity');
-			 		$slideContent.addClass("fadeInRight");
+			 		$slideContent.addClass("fadeInUp");
 					$slideContent.removeClass("fadeOutRight");
 					$slideImg .addClass("zoomIn");
 					$slideImg .removeClass("zoomOut");
 					
-					$slidePrevContent.removeClass(" fadeInRight");
+					$slidePrevContent.removeClass(" fadeInUp");
 					$slidePrevContent.addClass("fadeOutRight");
 					$slidePrevImg.removeClass("zoomIn");
 					$slidePrevImg.addClass("zoomOut");	
 			 		$('.container.scroll_container',e.currentTarget.triggerElement()).removeClass('zero-opacity');
-			 		for(var i=1;i<=5;i++){
+			 		for(var i=1;i<=6;i++){
 
 						if($getParentId == "slide0"+i)
 						{
@@ -80,17 +80,17 @@ console.log(e.type)
 			 			$slideNav.removeClass('hide-nav');
 						$slideNav.addClass('show-nav');
 
-						$slideContent.removeClass("fadeInRight");
+						$slideContent.removeClass("fadeInUp");
 						$slideContent.addClass("fadeOutRight");
 						$slideImg .removeClass("zoomIn");
 						$slideImg .addClass("zoomOut");
 
-						$slidePrevContent.addClass("fadeInRight");
+						$slidePrevContent.addClass("fadeInUp");
 						$slidePrevContent.removeClass("fadeOutRight");
 						$slidePrevImg.addClass("zoomIn");
 						$slidePrevImg.removeClass("zoomOut");	
 					 	$('.container.scroll_container',$prevParentElement).removeClass('zero-opacity');
-					 	for(var i=1;i<=4;i++){
+					 	for(var i=1;i<=6;i++){
 							// console.log($getParentId );
 						if($getParentId == "slide0"+i)
 							{
@@ -125,17 +125,7 @@ console.log(e.type)
 						scene.addTo(controller);
 
 			});
-	var nav_hide = new ScrollMagic.Controller();
-			var nav_scene = new ScrollMagic.Scene({triggerElement:'#slide06'});
-			nav_scene.on('enter', function(){
-				$('#slide-nav').removeClass('show-nav').addClass('hide-nav');
-			});
-			nav_scene.on('leave', function(){
-				$('#slide-nav').removeClass('hide-nav').addClass('show-nav');
-			});
-			nav_scene.triggerHook(0.7);
-			nav_scene.addTo(nav_hide);
-
+	
 				//  bind scroll to anchor links
 			$('#slide-nav').find('a.indicator-link').on("click", function (e) {
 					var id = $(this).attr("href");
@@ -148,15 +138,23 @@ console.log(e.type)
 					}
 			});
 		}
-		if (ww>320 && ww<=767){
+		if (ww>=320 && ww<=767){
 			//var slideIndex = 1;
 			showSlides(slideIndex);
-
-			
-
-				}
+			}
 		else{
 			initScrollMagic(controller);
-	}
+		}
+	var nav_hide = new ScrollMagic.Controller();
+			var nav_scene = new ScrollMagic.Scene({triggerElement:'#ck-many'});
+			nav_scene.on('enter', function(){
+				$('#slide-nav').removeClass('show-nav').addClass('hide-nav');
+			});
+			nav_scene.on('leave', function(){
+				$('#slide-nav').removeClass('hide-nav').addClass('show-nav');
+			});
+			nav_scene.triggerHook(0.7);
+			nav_scene.addTo(nav_hide);
+
 	
 });

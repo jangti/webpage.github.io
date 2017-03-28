@@ -1,3 +1,4 @@
+<!-- <!DOCTYPE html> -->
 <html lang="en" id="home">
 <head>
   	<title>Chalk Keeper</title>
@@ -19,38 +20,14 @@
   	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<!--scrollmagic-->
 
-	<script src="js/jquery.js"></script>
+	<script src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
  
     <!-- Include ScrollMagic -->
     <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/e1aa2ba9d2.js"></script>
-	<style type="text/css"> .wrapper{opacity: 1 !important;}</style>
-	<script>
-function _(id){ return document.getElementById(id); }
-function submitForm(){
-	_("mybtn").disabled = true;
-	_("status").innerHTML = 'please wait ...';
-	var formdata = new FormData();
-	formdata.append( "n", _("n").value );
-	formdata.append( "e", _("e").value );
-	formdata.append( "m", _("m").value );
-	var ajax = new XMLHttpRequest();
-	ajax.open( "POST", "testmail.php" );
-	ajax.onreadystatechange = function() {
-		if(ajax.readyState == 4 && ajax.status == 200) {
-			if(ajax.responseText == "success"){
-				_("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
-			} else {
-				_("status").innerHTML = ajax.responseText;
-				_("mybtn").disabled = false;
-			}
-		}
-	}
-	ajax.send( formdata );
-}
-</script>
+	<style type="text/css"> .wrapper{opacity: 1 !important;}</style>	
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="60">
@@ -71,15 +48,15 @@ function submitForm(){
 				<div class="navbar-collapse collapse" id="page-menu-collapse">
 					<div class="navbar-left">
 						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#header" class="active">Home</a></li>
-							<li><a data-scroll href="#features">How Special !</a></li>
-							<li><a href="http://demo.chalkkeeper.com/login">Pricing</a></li>
-							<li><a data-scroll href="#brief">Blog</a></li>
+							<li><a data-scroll href="#" class="active">Home</a></li>
+							<li><a data-scroll href="#">How Special !</a></li>
+							<li><a href="#ck-price">Pricing</a></li>
+							<li><a data-scroll href="#">Blog</a></li>
 						</ul>
 					</div>
 					<div class="navbar-right">
 						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#price">Log in</a></li>
+							<li><a data-scroll href="#">Log in</a></li>
 						</ul>
 					</div>
 				</div><!-- .navbar-collapse -->
@@ -94,37 +71,29 @@ function submitForm(){
 						<img src="img/Logo-svg.svg">
 					</div>
  					<!-- <p id="grad-hat" class="fadeInDown animated"><img src="img/Grad-Hat.svg"></p> -->
-					<h2 id="company-title">
-						<span class="animated mk-inline greenclr">C</span>
-						<span class="animated mk-inline greenclr">h</span>
-						<span class="animated mk-inline greenclr">a</span>
-						<span class="animated mk-inline greenclr">l</span>
-						<span class="animated mk-inline greenclr">k</span>
-						<span class="animated mk-inline orangeclr"> K</span>
-						<span class="animated mk-inline orangeclr">e</span>
-						<span class="animated mk-inline orangeclr">e</span>
-						<span class="animated mk-inline orangeclr">p</span>
-						<span class="animated mk-inline orangeclr">e</span>
-						<span class="animated mk-inline orangeclr">r</span>
+					<h2 id="ck-title">
+						Chalk Keeper
 						<strong class="animated fadeIn infinite">|</strong></h2>
-					<p id="company-caption" class="section-paragraph animated fadeIn">Lets Chalk this way</p>
-
+					<p class="ck-caption animated fadeIn">Knowledge has No Limits and Learning knows No Boundaries with Chalkkeeper</p>
+					<h3 class="ck-caption animated fadeIn">~ The SaaS Learning Management System ~</h3>
+					<div id="land-try"><h3><a href="http://demo.chalkkeeper.com/login/index.php">Try Now</a></h3></div>
 				</div>
 
 			</div>  
-			<div id="land-try"><h3><a href="http://demo.chalkkeeper.com/login">Try Now</a></h3></div>
 	    </div>
+	    
 	     <ul id="slide-nav" class="hide-nav">
 	    	<li><a id="carsl1" href="#slide01" class="indicator-link" name="slide01"></a></li>
 	    	<li><a id="carsl2" href="#slide02" class="indicator-link" name="slide02"></a></li>
 	    	<li><a id="carsl3" href="#slide03" class="indicator-link" name="slide03"></a></li>
 	    	<li><a id="carsl4" href="#slide04" class="indicator-link" name="slide04"></a></li>
 	    	<li><a id="carsl5" href="#slide05" class="indicator-link" name="slide05"></a></li>
+	    	<li><a id="carsl6" href="#slide06" class="indicator-link" name="slide06"></a></li>
 	    	
 	    </ul>
 	    <section style="padding:0" class="product_brief" id="product_brief">
 	    	<div class="slide fade-mobile hide-div" id="slide01">
-	    		
+	
 		    	<div class="container scroll_container" id="container1">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -140,8 +109,8 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		    				<div class="set_relative">
 		    					<div id="content1-slide" class="set_absolute desc_product animated">
-		    						<h2 class="section-heading animated"><span><img src="img/Assignments.svg" alt="img"></span>Dashboard</h2>
-		    						<p class="section-paragraph">Research has proved that having numerical insights about one's progress  would increase positive motivation in their endeavours.  We at Chalk Keeper have put extensive focus on user experience research  to provide a one-stop dashboard which provides your students,  statistical insights and timely notifications about their attendance status,  test scores, upcoming submissions, test dates and more.</p>
+		    						<h2 class="section-heading animated"><span><img src="img/Grades.svg" alt="img"></span>Dashboard</h2>
+		    						<p class="section-paragraph">Get all the important course-related information at one place. Chalkkeeper has a one-stop dashboard that provides statistical insights and timely notifications to the students. View your test scores, attendance status, upcoming submissions, test dates at one place.</p>
 		    					</div>
 		    				</div>
 
@@ -167,8 +136,9 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		    				<div class="set_relative">
 		    					<div id="content2-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Assignments.svg" alt="img"></span>Campus News</h2>
-		    						<p class="section-paragraph">Research has proved that having numerical insights about one's progress  would increase positive motivation in their endeavours.  We at Chalk Keeper have put extensive focus on user experience research  to provide a one-stop dashboard which provides your students,  statistical insights and timely notifications about their attendance status,  test scores, upcoming submissions, test dates and more.</p>
+		    						<h2 class="section-heading animated"><span><img src="img/Portfolio-1.svg" alt="img"></span>Campus News</h2>
+		    						<p class="section-paragraph">Don’t miss the latest campus updates. Educators and students can wear the “journalist’s hat” and publish the latest news regarding recruitment drives, campus events, community building exercises etc. It’s easier to stay connected and involved.
+									</p>
 		    					</div>
 		    				</div>
 
@@ -176,8 +146,7 @@ function submitForm(){
 		    		</div><!--row-->
 		    	</div><!-- .container -->
 		    </div>
-		    <div class="slide fade-mobile" id="slide03">
-		    	
+		    <div class="slide fade-mobile" id="slide03">   	
 		    	<div class="container scroll_container" id="container3">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -193,8 +162,8 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		    				<div class="set_relative">
 		    					<div id="content3-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Assignments.svg" alt="img"></span>Forums</h2>
-		    						<p class="section-paragraph">Research has proved that having numerical insights about one's progress  would increase positive motivation in their endeavours.  We at Chalk Keeper have put extensive focus on user experience research  to provide a one-stop dashboard which provides your students,  statistical insights and timely notifications about their attendance status,  test scores, upcoming submissions, test dates and more.</p>
+		    						<h2 class="section-heading animated"><span><img src="img/Forums.svg" alt="img"></span>Forums</h2>
+		    						<p class="section-paragraph">Be a part of the discussion. Help your peers and share the things that you know. Chalkkeeper has forums built in to facilitate the conversation in the community to encourage learning.</p>
 		    					</div>
 		    				</div>
 
@@ -202,8 +171,7 @@ function submitForm(){
 		    		</div><!--row-->
 		    	</div><!-- .container -->
 		    </div>
-		    <div class="slide fade-mobile" id="slide04">
-		    	
+		    <div class="slide fade-mobile" id="slide04">	
 		    	<div class="container scroll_container" id="container4">
 		    		<div class="row">
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -219,15 +187,14 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		    				<div class="set_relative">
 		    					<div id="content4-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Assignments.svg" alt="img"></span>Classroom</h2>
-		    						<p class="section-paragraph">Research has proved that having numerical insights about one's progress  would increase positive motivation in their endeavours.  We at Chalk Keeper have put extensive focus on user experience research  to provide a one-stop dashboard which provides your students,  statistical insights and timely notifications about their attendance status,  test scores, upcoming submissions, test dates and more.</p>
+		    						<h2 class="section-heading animated"><span><img src="img/Portfolio.svg" alt="img"></span>Classroom</h2>
+		    						<p class="section-paragraph">Learning should not stop during holidays. It offers a robust video conferencing solution to stimulate a virtual classroom experience to students, thus facilitating distance learning. Educators can broadcast their video feed along with their whiteboard in real time to the audience. Viewers can raise questions, share their screens and engage with other participants, bridging the gap between educators and students, regardless of their location.</p>
 		    					</div>
 		    				</div>
 
 		    			</div><!-- #brief-text -->
 		    		</div><!--row-->
-		    	</div><!-- .container -->
-		    	
+		    	</div><!-- .container -->	
 	    	</div>
 	    	<div class="slide fade-mobile" id="slide05">
 		    	
@@ -246,125 +213,206 @@ function submitForm(){
 		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		    				<div class="set_relative">
 		    					<div id="content5-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Assignments.svg" alt="img"></span>Classroom</h2>
-		    						<p class="section-paragraph">Research has proved that having numerical insights about one's progress  would increase positive motivation in their endeavours.  We at Chalk Keeper have put extensive focus on user experience research  to provide a one-stop dashboard which provides your students,  statistical insights and timely notifications about their attendance status,  test scores, upcoming submissions, test dates and more.</p>
+		    						<h2 class="section-heading animated"><span><img src="img/attendence.svg" alt="img"></span>Plagiarism Detection</h2>
+		    						<p class="section-paragraph">Do away with the teachers’ workload crisis. Chalkkeeper has an integrated plagiarism detection algorithm that can automatically submit and check the student’s paper for plagiarism. Assignments can be securely stored on the cloud for easy retrieval and access. Say goodbye to lugging around physical assignments.</p>
 		    					</div>
 		    				</div>
 
 		    			</div><!-- #brief-text -->
 		    		</div><!--row-->
-		    	</div><!-- .container -->
+		    	</div><!-- .container -->  	
+	    	</div>
+	    	<div class="slide fade-mobile" id="slide06">
 		    	
-	    	</div>
-	    	<div class="slideq fade-mobile" id="slide06">
-	    		<div class="row">
-	    			<div class="priceBox">
-	    				<h4>STARTER</h4>
-	    				<h3>&#8377;25,000</h3>
-	    				<p>per month</p>
-	    				<div id="price-details">
-	    					<p>— up to 200 users</p>
-	    					<p>— e-mail support</p>
-	    					<p>— initial training</p>
-	    				</div>
-	    				<h6>more details</h6>
+		    	<div class="container scroll_container" id="container6">
+		    		<div class="row">
+		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		    				<div class="brief-img_in brief-imgWidth">
+		    					<img class="animated img-slide img-responsive" id="img6-slide" src="img/android-tablet.png" alt="">
 
-	    			</div>
-	    			<div class="priceBox">
-	    				<h4>PRO</h4>
-	    				<h3>&#8377;25,000</h3>
-	    				<p>per month</p>
-	    				<div id="price-details">
-							<p>— up to 1000 users</p>
-	    					<p>— phone support</p>
-	    					<p>— Montly Reports</p>
-	    					<p>— Online classroom</p>
-	    					<p>— Intial setup</p>
-	    				</div>
-	    				<h6>more details</h6>
-	    			</div>
-	    			<div class="priceBox">
-	    				<h4>ENTERPRISE</h4>
-	    				<h3>CALL US</h3>
-	    				<div id="price-details">
-	    					<p>— Everything from Starter  and Pro.</p>
-	    					<p>— Dedicated Engineer for the account.</p>
-	    					<!-- <p>- initial training</p> -->
-	    				</div>
-	    				<h6>more details</h6>
-	    			</div>
+		    				</div>
+
+		    			</div><!-- #brief-img -->
+
+
+		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		    				<div class="set_relative">
+		    					<div id="content6-slide" class="animated set_absolute desc_product">
+		    						<h2 class="section-heading animated"><span><img src="img/chat.svg" alt="img"></span>Messaging</h2>
+		    						<p class="section-paragraph">Clarify your doubts and take lessons instantly. It offers a rich communication platform ‘Bol’ that supports Message Broadcast to student groups, peer-to-peer chat, Email, one-on-one interaction with teachers, and internal communication between various class groups.</p>
+		    					</div>
+		    				</div>
+
+		    			</div><!-- #brief-text -->
+		    		</div><!--row-->
+		    	</div><!-- .container -->  	
+	    	</div>
+	    	
+	    	<!-- many more -->
+	    	<div id="ck-many">
+		    	<div class="ck-wrap">
+		    		<!-- [class*="content-"] = container max-width:50% = 600px -->
+		    		<div class="ck-content-center">
+		    			<h3>And Many More</h3>
+		    			<ul class="ck-flexblock ck-specs">
+		    				<li>
+		    					<div>
+		    						<p>
+		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+		    							<span class="ck-many-content">Lead the students through their own discoveries. The in-built peer review functionality can help to strengthen the student's’ work and save grading time.</span>
+		    						</p>
+		    					</div>
+		    				</li>
+		    				<li>
+		    					<div>
+		    						<p>
+		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+		    							<span class="ck-many-content">Gamify the learning experience. The game elements such as activity points, rewards, badges, leaderboards and profiles are integrated into the learning management system. This enhances learners’ intrinsic motivation.</span>
+		    						</p>
+		    					</div>
+		    				</li>
+		    				<li>
+		    					<div>
+		    						<p>
+		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+		    							<span class="ck-many-content">Prepare and conduct online assessments and quizzes. Chalk Keeper offers you a simple tool to conduct in-app quizzes, assessments and various skill based certification courses, through a user friendly, drag and drop web application. The need for physical involvement is removed.</span>
+		    						</p>
+		    					</div>
+		    				</li>
+		    				<li>
+		    					<div>
+		    						<p>
+		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+		    							<span class="ck-many-content">Gather feedback on students’ learning experience. The feedback tools and online polls can allow students to share their feedback to the educators in an anonymous manner. The advanced analytical engine can crunch the numbers to yield insightful reports and visuals for improving teaching methodologies.</span>
+		    						</p>
+		    					</div>
+		    				</li>
+		    			</ul>
+		    		</div>
+		    		<!-- end .content-center -->
+		    	</div>
+	    	</div>
+			<!-- .end .wrap -->
+
+	    	<div id="ck-price">
+	    		<div class="ck-wrap">
+	    			<h2 class="ck-aligncenter">Pricing</h2>
+	    			<ul class="ck-flexblock ck-plans ck-blink">
+	    				<li>
+	    					<a href="#" title="Register">
+	    						<h2>Starter</h2>
+	    						<div>
+	    							<span class="ck-price"><sup>&#x20b9;</sup>25,000<sup>/month</span>
+	    							<p>Up to 200 users</p>
+	    							<p>e-mail support</p>
+	    							<p>initial training</p>
+	    							<span class="ck-button ck-ghost">Select</span>
+	    						</div>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="#" title="Purchase">
+	    						<h2>Pro</h2>
+	    						<div>
+	    							<span class="ck-price"><sup>&#x20b9;</sup>1,00,000<sup>/month</sup></span>
+	    							<p>up to 1000 users</p>
+	    							<p>phone support</p>
+	    							<p>Montly Reports</p>
+	    							<p>Online classroom</p>
+	    							<p>Intial setup</p>
+	    							<p>Initial Training</p>
+	    							<span class="ck-button ck-radius">Buy Now</span>
+	    						</div>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="#" title="Purchase">
+	    						<h2>Enterprise</sup></h2>
+	    						<div>
+	    							<span class="ck-price">Call Us</span>
+	    							<p>Everything from Starter and Pro.</p>
+	    							<p>Dedicated Engineer for the account.</p>
+	    							<span class="ck-button ck-ghost">Select</span>
+	    						</div>
+	    					</a>
+	    				</li>
+	    			</ul>
 	    		</div>
 	    	</div>
 
-	    	<div class="slideq fade-mobile" id="slide07">
-    			<div id="say-hello">
-	    			<div class="say-hello-box">
-	    				Say Hello
-	    			</div>
-    			</div>
-    			<div id="say-hello-try">
-    				<div class="row">
-    					<div class="col-md-6 col-xs-8 col-xs-offset-1 col-md-offset-2">
-    						<h3>Do you like chalkkeeper</h3>
-    						<p>Content writer lines</p>
-    					</div>
-    					<div class="col-md-2 col-xs-2">
-    						<a href="http://demo.chalkkeeper.com/login">Try Now</a>
-    					</div>
-    				</div>
-    			</div>
+	    	<div id="ck-contact">
+		    	<div class="ck-wrap">
+		    		<h1>Contact Us</h1>
+		    		<div class="ck-grid ck-vertical-align">
+		    			<div class="ck-column">
+		    				<form action="/" method="post">
+		    					<fieldset>
+		    						<legend>Write to us</legend>
+		    						<p><input type="text" tabindex="1" name="username" placeholder="Username" required></p>
+		    						<p><input type="email" tabindex="2" name="email" placeholder="your@email.com" required></p>
+		    						<p><textarea placeholder="Your message here"></textarea></p>
+		    						<p><button type="submit" tabindex="4" title="Sign Up">Submit &rsaquo;</button></p>
+		    					</fieldset>
+		    				</form>
+		    			</div>
+		    			<!-- .end .column -->
+		    			<div class="ck-column">
+		    				<ul class="ck-flexblock ck-specs">
+		    					<li>
+		    						<div>
+		    							<h2>Chalk Keeper</h2>
+		    						</div>
+		    					</li>
+		    					<li>
+		    						<div>
+		    							<span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+		    							<h2>Bangalore Address</h2>
+		    							<p>
+		    								<address>#1372/C, 1st Floor, 32nd E Cross</address>
+	    									<address>4th T Block, Jayanagara, Bengaluru-41</address>
+	    									<address>Contact-Person : Vinay</address>
+	    									<address>Mob:+91-900-077-2494</address>
+		    							</p>
+		    						</div>
+		    					</li>
+		    					<li>
+		    						<div>
+		    							<span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+		    							<h2>U.S Address</h2>
+		    							<p>
+		    								<address>545 E John Carpenter Fwy</address>
+	    									<address>Irving, TX 75062, USA</address>
+	    									<address>Contact-Person : Dilip</address>
+	    									<address>Mob:+1-910-299-8799</address>
+		    							</p>
+		    						</div>
+		    					</li>
+		    				</ul>
+		    			</div>
+		    			<!-- .end .column -->
+		    		</div>
+		    		<!-- .end .grid -->
+		    	</div>
 	    	</div>
 
-	    	<div id="contact-us">
-	    		<div class="row">
-	    			<div class="col-md-3 col-md-offset-1 col-xs-12">
-	    				<h3>Chalkkeeper</h3>
-	    				<address>jayanagar, bangalore</address>
-	    			</div>
-	    			<div class="col-md-2 col-xs-6">
-	    				<h4>Company</h4>
-	    				<ul>
-	    					<li>Home</li>
-	    					<li>About Us</li>
-	    					<li>Career</li>
-	    					<li>Pricing</li>
-	    					<li>Contact Us</li>
-	    				</ul>
-	    			</div>
-	    			<div class="col-md-2 col-xs-6">
-	    				<h4>Others</h4>
-	    				<ul>
-	    					<li>Help & Contact</li>
-	    					<li>Privacy Policy</li>
-	    					<li>Terms</li>
-	    					<li>Sitemap</li>
-	    				</ul>
-	    			</div>
-	    			<div class="col-md-3 col-xs-12">
-	    				<h4>Newsletter</h4>
-	    				<p>Subscribe to our newsletter and get all the cool news</p>
-	    				<div class="input-group" id="customer_mail">
-					      <input type="text" class="form-control" placeholder="Enter Email">
-					      <span class="input-group-btn">
-					        <button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-					      </span>
-					    </div><!-- /input-group -->
+	    	<footer id="ck-footer">
+	    		<div class="ck-wrap">
+	    			<div>
+	    				<div class="ck-alignleft">
+	    					<h3>Company</h3>
+	    					<ul>
+	    						<li><a href="story.html">Our Story</a></li>
+	    						<li><a href="career.html">Careers</a></li>
+	    						<!-- <li><a href="">Blog</a></li> -->
+	    					</ul>
+	    				</div>
+	    				<div class="ck-alignright">
+	    					All rights reserved
+	    				</div>
+	    				<div style="clear: both;"></div>
 	    			</div>
 	    		</div>
-	    		<hr style="background:#EEF1EC;">
-	    		<div class="row">
-	    			<div class="col-md-3 col-md-offset-1">
-	    				<h5>All rights reserved</h5>
-	    			</div> 
-	    			<div class="col-md-3 col-md-offset-4">
-	    				<a id="contact_tw" class="btn btn-default" href="#" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-	    				<a id="contact_fb" class="btn btn-default" href="#" role="button"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-	    				<a id="contact_in" class="btn btn-default" href="#" role="button"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-	    				<a id="contact_dr" class="btn btn-default" href="#" role="button"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-	    				<a id="contact_gi" class="btn btn-default" href="#" role="button"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-	    			</div>
-	    		</div>
-	    	</div>
+	    	</footer>
 	    	<!-- <div class="slide fade-mobile" id="slide05">
 	    		<div id="page-wrapper">
 	    			<h1>Contact Form </h1>
@@ -418,7 +466,7 @@ function submitForm(){
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/smooth-scroll.min.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <!-- <script type="text/javascript" src="js/app.js"></script> -->
   <script type="text/javascript">
 
   $(function() {
