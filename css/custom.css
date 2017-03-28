@@ -2302,7 +2302,7 @@ ul.ck-flexblock{
 	}
 	.slide h2.section-heading
 	{
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.slide .section-heading>span>img
 	{
@@ -2346,7 +2346,7 @@ ul.ck-flexblock{
 		padding-top: 45px;
 	}
 	#slide05 .brief-img_in img{
-		margin-top: 20px;
+		margin-top: 5px;
 	}
 	#img4-slide{
 		margin-top: 45px;
@@ -2417,6 +2417,9 @@ ul.ck-flexblock{
 	}
 	#ck-contact p{
 		margin-bottom: 2.2rem;
+	}
+	#container4 .brief-img_in img {
+    height: calc(100% - 0%);
 	}
 }
 
