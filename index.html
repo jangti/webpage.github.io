@@ -1,614 +1,1224 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en" id="home">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  	<title>Chalk Keeper</title>
-  	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui" id="viewport"/>
-   	<meta name="apple-mobile-web-app-capable" content="yes" />
-   	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-   	<meta name="format-detection" content="telephone=no">
-   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	
-  	
-  	<!-- lib files -->
- 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/landing-page.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<!--custom files-->
-  	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<!--scrollmagic-->
+    <!-- Title  -->
+    <title>Chalk Keeper</title>
 
-	<script src="js/jquery-2.2.4.min.js"></script>
-	<script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
- 
-    <!-- Include ScrollMagic -->
-    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://use.fontawesome.com/e1aa2ba9d2.js"></script>
-	<style type="text/css"> .wrapper{opacity: 1 !important;}</style>	
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
+
+    <!-- ::::::::::::::::::::::::::: All CSS Files ::::::::::::::::::::::::::: -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Icomoon fonts -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+
+    <!--[if IE]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="60">
-	<div class="wrapper">
-		<nav id="menu-nav" class="navbar navbar-default navbar-fixed-top">
-			<div id="change-container" class="container-fluid">
+<body class="default-version">
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div id="load">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- /.end preloader -->
 
-				 <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#page-menu-collapse" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					
-				</div><!-- .navbar-header -->
+    <!-- ::::::::::::::::::::::::::: Header Start ::::::::::::::::::::::::::: -->
+    <header class="header_area">
+        <!-- Main Header Area Start -->
+        <div class="main_header_area animated">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-xs-9">
+                        <!-- Logo Area Start -->
+                        <div class="logo_area">
+                            <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- Menu Area Start -->
+                    <div class="col-sm-10 col-xs-12">
+                        <div class="main_menu_area">
+                            <div class="mainmenu">
+                                <nav>
+                                    <ul id="nav">
+                                        <li class="current_page_item"><a href="#home">Home</a></li>
+                                        <li><a href="#product">About Us</a></li>
+                                        <!-- <li><a href="#">Page</a>
+                                            <ul class="sub-menu">
+                                                
+                                                <li><a href="#product">About Us</a></li>
+                                                
+                                            </ul>
+                                        </li> -->
+                                        <li><a href="#features">How Special!</a></li>
+                                        <li><a href="#price">Pricing</a></li>
+                                        <li><a href="blog-sidebar.html">Blog</a></li>
+                                        <li><a href="http://demo.chalkkeeper.com/login/index.php">Log In</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ::::::::::::::::::::::::::: Header End ::::::::::::::::::::::::::: -->
 
-				<div class="navbar-collapse collapse" id="page-menu-collapse">
-					<div class="navbar-left">
-						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#" class="active">Home</a></li>
-							<li><a data-scroll href="#">How Special !</a></li>
-							<li><a href="#ck-price">Pricing</a></li>
-							<li><a data-scroll href="#">Blog</a></li>
-						</ul>
-					</div>
-					<div class="navbar-right">
-						<ul class="nav navbar-nav">
-							<li><a data-scroll href="#">Log in</a></li>
-						</ul>
-					</div>
-				</div><!-- .navbar-collapse -->
-			</div><!-- .container -->
-		</nav>
-	
-		<div id="landing-page" class="container-height">
-			<div id="landing-page-in">
-				<div class="intro-text">
+    <!-- ::::::::::::::::::::::::::: Welcome Area Start ::::::::::::::::::::::::::: -->
+    <section class="welcome_area" id="home">
+        <!-- Single Slide Area Start -->
+        <div class="text-center">
+            <div class="table">
+                <div class="table_cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 imgs">
+                                <img src="img/images/welcome-sized-1x.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="welcome_text_area">
+                                    <h2>Chalk Keeper</h2>
+                                    <p>Knowledge has No Limits and Learning knows No Boundaries with Chalkkeeper</p>
+                                    <h3>The SaaS Learning Management System</h3>
+                                    <a href="http://demo.chalkkeeper.com/login/index.php" class="btn btn-default btn-lg">Try now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Welcome Area Background Style -->
+        <div class="welcome_style_one"></div>
+        <div class="welcome_style_two"></div>
+        <div class="welcome_style_three"></div>
+        <div class="welcome_style_four"></div>
+    </section>
 
-					<div id="ck-logo"> 
-						<img src="img/Logo-svg.svg">
-					</div>
- 					<!-- <p id="grad-hat" class="fadeInDown animated"><img src="img/Grad-Hat.svg"></p> -->
-					<h2 id="ck-title">
-						Chalk Keeper
-						<strong class="animated fadeIn infinite">|</strong></h2>
-					<p class="ck-caption animated fadeIn">Knowledge has No Limits and Learning knows No Boundaries with Chalkkeeper</p>
-					<h3 class="ck-caption animated fadeIn">~ The SaaS Learning Management System ~</h3>
-					<div id="land-try"><h3><a href="http://demo.chalkkeeper.com/login/index.php">Try Now</a></h3></div>
-				</div>
+<!--
+    <section class="welcome_area" id="home">
+        <div class="table">
+            <div class="table_cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-8">
+                            &lt;!&ndash; Welcome Area Text Start &ndash;&gt;
+                            <div class="welcome_text_area">
+                                <h2>Chalk Keeper</h2>
+                                <p>Knowledge has No Limits and Learning knows No Boundaries with Chalkkeeper</p>
+                                <h3>The SaaS Learning Management System</h3>
+                                <a href="#download" class="btn btn-default btn-lg"><i class="icofont icofont-download-alt"></i>Try now</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-4">
+                            &lt;!&ndash; Welcome Area Image Start &ndash;&gt;
+                            <div class="welcome_area_thumb">
+                                <img src="img/images/welcome-sized-1x.png" alt="" style="width: 500px!important; height: 300px!important;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &lt;!&ndash; Welcome Area Background Style &ndash;&gt;
+        <div class="welcome_style_one"></div>
+        <div class="welcome_style_two"></div>
+        <div class="welcome_style_three"></div>
+        <div class="welcome_style_four"></div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: Welcome Area End ::::::::::::::::::::::::::: -->
 
-			</div>  
-	    </div>
-	    
-	     <ul id="slide-nav" class="hide-nav">
-	    	<li><a id="carsl1" href="#slide01" class="indicator-link" name="slide01"></a></li>
-	    	<li><a id="carsl2" href="#slide02" class="indicator-link" name="slide02"></a></li>
-	    	<li><a id="carsl3" href="#slide03" class="indicator-link" name="slide03"></a></li>
-	    	<li><a id="carsl4" href="#slide04" class="indicator-link" name="slide04"></a></li>
-	    	<li><a id="carsl5" href="#slide05" class="indicator-link" name="slide05"></a></li>
-	    	<li><a id="carsl6" href="#slide06" class="indicator-link" name="slide06"></a></li>
-	    	
-	    </ul>
-	    <section style="padding:0" class="product_brief" id="product_brief">
-	    	<div class="slide fade-mobile hide-div" id="slide01">
-	
-		    	<div class="container scroll_container" id="container1">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <!-- ::::::::::::::::::::::::::: Product Area Start ::::::::::::::::::::::::::: -->
+    <section class="about_area section_padding_100_70" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading wow fadeInUp">
+                        <h2>ONE STOP SHOP</h2>
+                        <p>The innovative analytics tool provides a one-stop dashboard where users can get all detailed and relevant reports from attendance to grades. You can get statistical insights and timely notifications related to test scores, attendance status, upcoming submissions or test dates, and can analyze results at one place.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
+                    <div class="about_product_discription">
+                        <div class="row">
+                            <!-- Single About Part Area Start-->
+                            <div class="col-xs-12">
+                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="feature_icon">
+                                        <span class="icon-dashboard">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+                </span>
+                                    </div>
+                                    <h3>Toggle between tasks</h3>
+                                    <p>Switch amongst various features from Messaging to managing the Portfolio...</p>
+                                </div>
+                            </div>
+                            <!-- Single About Part Area Start-->
+                            <div class="col-xs-12">
+                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="feature_icon">
+                                        <span class="icon-copy-1">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+                </span>
+                                    </div>
+                                    <h3>Never miss out</h3>
+                                    <p>Smart reminders of what is due for turning in, Helps one plan better.</p>
+                                </div>
+                            </div>
+                            <!-- Single About Part Area Start-->
+                            <div class="col-xs-12">
+                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="feature_icon">
+                                        <span class="icon-Grades">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span>
+                </span>
+                                    </div>
+                                    <h3>Keep yourself motivated</h3>
+                                    <p>Keep track of grades and progress across various courses.</p>
+                                </div>
+                            </div>
+                            <!-- Single About Part Area Start-->
+                            <div class="col-xs-12">
+                                <div class="single_about_part wow fadeInUp" data-wow-delay="0.8s">
+                                    <div class="feature_icon">
+                                        <span class="icon-campusnews">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+                </span>
+                                    </div>
+                                    <h3>News Feed</h3>
+                                    <p>Read and Publish the latest news on things you care. It’s easier to stay connected and involved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img1-slide" src="img/iphone-silver.png" alt="">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <!-- About Product Thumb Area Start -->
+                    <div class="about_product_thumb text-center wow fadeInLeft" data-wow-delay="0.2s">
+                        <img src="img/images/features-img-2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: Product Area End ::::::::::::::::::::::::::: -->
 
-		    				</div>
+    <!-- ::::::::::::::::::::::::::: Video Area Start ::::::::::::::::::::::::::: -->
+    <section class="video_area">
+        <div class="table">
+            <div class="table_cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Video Area Text -->
+                            <div class="video_area_text text-center section_padding_100">
+                                <h2>Introducing Chalk Keeper</h2>
+                                <a href="https://www.youtube.com/watch?v=6NC_ODHu5jg" class="video_btn"><i class="icofont icofont-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: Video Area End ::::::::::::::::::::::::::: -->
 
-		    			</div><!-- #brief-img -->
+    <!-- ::::::::::::::::::::::::::: About App Area Start ::::::::::::::::::::::::::: -->
+    <section class="about_app_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-md-offset-1">
+                    <!-- About Image Start -->
+                    <div class="about_image">
+                        <div class="big_thumb">
+                            <img src="img/images/optimised.svg" alt="">
+                        </div>
+                        <div class="small_thumb wow fadeInLeft" data-wow-delay="0.2s">
+                            <img src="img/images/iphone-news.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5">
+                    <!-- About Text Start -->
+                    <div class="about_us_text_area">
+                        <h3>Learn. Connect. Perform</h3>
+                        <p>Chalkkeeper is the most advanced self-hosted cloud-based learning management system for use by schools and universities. With its robust features, user-friendly interface and social collaboration tool, learning will become a rewarding experience for both learners and facilitators.</p>
+                        <a href="#features">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: About App Area End ::::::::::::::::::::::::::: -->
 
+    <!-- ::::::::::::::::::::::::::: Features Area Start ::::::::::::::::::::::::::: -->
+    <div class="more_features_area section_padding_100_70" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading wow fadeInUp">
+                        <h2>More <span> Features</span></h2>
+                    </div>
+                    <!-- Section Heading End -->
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Benifits Area Start -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item active" data-wow-delay="0.2s">
+                        <div class="icon_box">
+                            <span class="icon-dashboard">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+                            </span>
+                        </div>
+                        <h4>Dashboard</h4>
+                        <p>Get all the important course-related information at one place. Chalkkeeper has a one-stop dashboard that provides statistical insights and timely notifications to the students. View your test scores, attendance status, upcoming submissions, test dates at one place.</p>
+                    </div>
+                </div>
+                <!-- Single Benifits Area Start -->
+                <!-- Single Benifits Area Start -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item active" data-wow-delay="0.2s">
+                        <div class="icon_box">
+                            <span class="icon-campusnews">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+                            </span>
+                        </div>
+                        <h4>Campus News</h4>
+                        <p>Don’t miss the latest campus updates. Educators and students can wear the “journalist’s hat” and publish the latest news regarding recruitment drives, campus events, community building exercises etc. It’s easier to stay connected and involved.</p>
+                    </div>
+                </div>
+                <!-- Single Benifits Area Start -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="0.4s">
+                        <div class="icon_box">
+                            <span class="icon-Forums">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span>
+                            </span>
+                        </div>
+                        <h4>Forums</h4>
+                        <p>Be a part of the discussion. Help your peers and share the things that you know. Chalkkeeper has forums built in to facilitate the conversation in the community to encourage learning.</p>
+                    </div>
+                </div>
+                <!-- Single Benifits Area Start -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="0.6s">
+                        <div class="icon_box">
+                            <span class="icon-classroom2">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
+                            </span>
+                        </div>
+                        <h4>Classroom</h4>
+                        <p>Learning should not stop during holidays. It offers a robust video conferencing solution to stimulate a virtual classroom experience to students, thus facilitating distance learning. Educators can broadcast their video feed along with their whiteboard in real time to the audience. Viewers can raise questions, share their screens and engage with other participants, bridging the gap between educators and students, regardless of their location.</p>
+                    </div>
+                </div>
+                <!-- Single Benifits Area Start -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="0.8s">
+                        <div class="icon_box">
+                            <span class="icon-plagarism">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+                            </span>
+                        </div>
+                        <h4>Plagiarism Detection</h4>
+                        <p>Do away with the teachers’ workload crisis. Chalkkeeper has an integrated plagiarism detection algorithm that can automatically submit and check the student’s paper for plagiarism. Assignments can be securely stored on the cloud for easy retrieval and access. Say goodbye to lugging around physical assignments.</p>
+                    </div>
+                </div>
+                <!-- Single Benifits Area Start -->
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content1-slide" class="set_absolute desc_product animated">
-		    						<h2 class="section-heading animated"><span><img src="img/Grades.svg" alt="img"></span>Dashboard</h2>
-		    						<p class="section-paragraph">Get all the important course-related information at one place. Chalkkeeper has a one-stop dashboard that provides statistical insights and timely notifications to the students. View your test scores, attendance status, upcoming submissions, test dates at one place.</p>
-		    					</div>
-		    				</div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="1.0s">
+                        <div class="icon_box">
+                            <span class="icon-chat">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span>
+                            </span>
+                        </div>
+                        <h4>Messaging</h4>
+                        <p>Clarify your doubts and take lessons instantly. It offers a rich communication platform ‘Bol’ that supports Message Broadcast to student groups, peer-to-peer chat, Email, one-on-one interaction with teachers, and internal communication between various class groups.</p>
+                    </div>
+                </div>
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->
-		    	<div id="shrinkIn_img1"></div>
-	    	</div>
-	    	<div class="slide fade-mobile" id="slide02">
-	    		
-		    	<div class="container scroll_container" id="container2">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <!-- Single Benifits Area Start -->
 
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img2-slide" src="img/android.png" alt="">
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="1.2s">
+                        <div class="icon_box">
+                            <span class="icon-gamify">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+                            </span>
+                        </div>
+                        <h4>Gamify</h4>
+                        <p>Gamify the learning experience. The game elements such as activity points, rewards, badges, leaderboards and profiles are integrated into the learning management system. This enhances learners’ intrinsic motivation.</p>
+                    </div>
+                </div>
 
-		    				</div> 
+                <!-- Single Benifits Area Start -->
 
-		    			</div><!-- #brief-img -->
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="1.4s">
+                        <div class="icon_box">
+                            <span class="icon-quiz">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+                            </span>
+                        </div>
+                        <h4>Quiz</h4>
+                        <p>Prepare and conduct online assessments and quizzes. Chalk Keeper offers you a simple tool to conduct in-app quizzes, assessments and various skill based certification courses, through a user friendly, drag and drop web application. The need for physical involvement is removed.</p>
+                    </div>
+                </div>
 
+                <!-- Single Benifits Area Start -->
+<!--
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_benifits wow fadeInUp item" data-wow-delay="1.6s">
+                        <div class="icon_box">
+                            <i class="icofont icofont-open-eye"></i>
+                        </div>
+                        <h4>Retina Ready</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dignissimos.</p>
+                    </div>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::::::::::::::: Features Area End ::::::::::::::::::::::::::: -->
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content2-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Portfolio-1.svg" alt="img"></span>Campus News</h2>
-		    						<p class="section-paragraph">Don’t miss the latest campus updates. Educators and students can wear the “journalist’s hat” and publish the latest news regarding recruitment drives, campus events, community building exercises etc. It’s easier to stay connected and involved.
-									</p>
-		    					</div>
-		    				</div>
+    <!-- ::::::::::::::::::::::::::: Work Process Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <section class="work_process_area section_padding_100_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Section Heading Start &ndash;&gt;
+                    <div class="section_heading wow fadeInUp">
+                        <h2>How it <span>Works</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    &lt;!&ndash; Section Heading End &ndash;&gt;
+                </div>
+            </div>
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->
-		    </div>
-		    <div class="slide fade-mobile" id="slide03">   	
-		    	<div class="container scroll_container" id="container3">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                &lt;!&ndash; Single Work Step &ndash;&gt;
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_work_step wow fadeInUp" data-wow-delay="0.2s">
+                        <i class="icofont icofont-cloud-download"></i>
+                        <h4>Install</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                &lt;!&ndash; Single Work Step &ndash;&gt;
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_work_step wow fadeInUp" data-wow-delay="0.4s">
+                        <i class="icofont icofont-electron"></i>
+                        <h4>Register</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                &lt;!&ndash; Single Work Step &ndash;&gt;
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_work_step wow fadeInUp" data-wow-delay="0.6s">
+                        <i class="icofont icofont-users-alt-4"></i>
+                        <h4>Set Your Profile</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                &lt;!&ndash; Single Work Step &ndash;&gt;
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_work_step wow fadeInUp" data-wow-delay="0.8s">
+                        <i class="icofont icofont-checked"></i>
+                        <h4>Done</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: Work Process Area End ::::::::::::::::::::::::::: -->
 
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img3-slide" src="img/android-tablet.png" alt="">
+    <!-- ::::::::::::::::::::::::::: Testimonial Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <div class="testimonial_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <div class="testimonials_area">
+                        <div class="testimonials">
+                            &lt;!&ndash; Single testimonial area start  &ndash;&gt;
+                            <div class="single_testimonial_area text-center">
+                                &lt;!&ndash; Single testimonial thumb  &ndash;&gt;
+                                <div class="testimonial_author_thumb">
+                                    <img src="img/advisor-img/testimonial-1.jpg" alt="">
+                                </div>
+                                &lt;!&ndash; Single testimonial text  &ndash;&gt;
+                                <div class="testimonial_text">
+                                    <p>Awesome &amp; Amazing Work. Very Well Organised HTML Template with high quality stunning design. Thank you very much!</p>
+                                    &lt;!&ndash;  Rating  &ndash;&gt;
+                                    <div class="rating">
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                    </div>
+                                    <div class="testimonial_author_name">
+                                        <h4>MD NAZRUL ISLAM</h4>
+                                        <h5>CEO &amp; Founder, Designing World</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            &lt;!&ndash; Single testimonial area start  &ndash;&gt;
+                            <div class="single_testimonial_area text-center">
+                                &lt;!&ndash; Single testimonial thumb  &ndash;&gt;
+                                <div class="testimonial_author_thumb">
+                                    <img src="img/advisor-img/testimonial-2.jpg" alt="">
+                                </div>
+                                &lt;!&ndash; Single testimonial text  &ndash;&gt;
+                                <div class="testimonial_text">
+                                    <p>Awesome &amp; Amazing Work. Very Well Organised HTML Template with high quality stunning design. Thank you very much!</p>
+                                    &lt;!&ndash;  Rating  &ndash;&gt;
+                                    <div class="rating">
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                        <i class="icofont icofont-star"></i>
+                                    </div>
+                                    <div class="testimonial_author_name">
+                                        <h4>MD NAZRUL ISLAM</h4>
+                                        <h5>CEO &amp; Founder, Designing World</h5>
+                                    </div>
+                                </div>
+                            </div>
 
-		    				</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- ::::::::::::::::::::::::::: Testimonial Area End ::::::::::::::::::::::::::: -->
 
-		    			</div><!-- #brief-img -->
+    <!-- ::::::::::::::::::::::::::: App Screenshot Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <section class="app_screenshot_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Section Heading Start &ndash;&gt;
+                    <div class="section_heading wow fadeInUp">
+                        <h2>App <span>Screenshots</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    &lt;!&ndash; Section Heading End &ndash;&gt;
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; App Screenshot Slider Area &ndash;&gt;
+                    <div class="app_screenshots">
+                        &lt;!&ndash; Single Slide &ndash;&gt;
+                        <div class="single_screenshot">
+                            <img src="img/screenshot/01.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single Slide &ndash;&gt;
+                        <div class="single_screenshot">
+                            <img src="img/screenshot/02.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single Slide &ndash;&gt;
+                        <div class="single_screenshot">
+                            <img src="img/screenshot/03.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single Slide &ndash;&gt;
+                        <div class="single_screenshot">
+                            <img src="img/screenshot/04.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single Slide &ndash;&gt;
+                        <div class="single_screenshot">
+                            <img src="img/screenshot/05.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: App Screenshot Area End ::::::::::::::::::::::::::: -->
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content3-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Forums.svg" alt="img"></span>Forums</h2>
-		    						<p class="section-paragraph">Be a part of the discussion. Help your peers and share the things that you know. Chalkkeeper has forums built in to facilitate the conversation in the community to encourage learning.</p>
-		    					</div>
-		    				</div>
+    <!-- ::::::::::::::::::::::::::: Price and Plans Area Start ::::::::::::::::::::::::::: -->
+    <div class="price_plan_area section_padding_100_70" id="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading wow fadeInUp">
+                        <h2><span>Pricing</span> Plan</h2>
+                    </div>
+                    <!-- Section Heading End -->
+                </div>
+            </div>
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->
-		    </div>
-		    <div class="slide fade-mobile" id="slide04">	
-		    	<div class="container scroll_container" id="container4">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                <!-- Single Price Plan Area Start-->
+                <div class="col-sm-8 col-md-4">
+                    <div class="single_price_plan item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="title">
+                            <h3>Starter</h3>
+                        </div>
+                        <div class="price">
+                            <h4>₹ 25,000</h4>
+                            <span>/month</span>
+                        </div>
+                        <div class="description">
+                            <p>Up to 200 users</p>
+                            <p>E-mail support</p>
+                            <p>Initial training</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-default" href="#" role="button">Pick This Plan</a>
+                        </div>
+                    </div>
+                </div>
 
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img4-slide" src="img/macbook.png" alt="">
+                <!-- Single Price Plan Area Start -->
+                <div class="col-sm-8 col-md-4">
+                    <div class="single_price_plan item wow fadeInUp active" data-wow-delay="0.4s">
+                        <div class="title">
+                            <h3>Pro</h3>
+                        </div>
+                        <div class="price">
+                            <h4>₹ 100,000</h4>
+                            <span>/month</span>
+                        </div>
+                        <div class="description">
+                            <p>Up to 1000 users</p>
+                            <p>Phone Support</p>
+                            <p>Monthly Reports</p>
+                            <p>Online classroom</p>
+                            <p>Initial Support</p>
+                            <p>Initial training</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-default" href="#" role="button">Pick This Plan</a>
+                        </div>
+                    </div>
+                </div>
 
-		    				</div>
+                <!-- Single Price Plan Area Start -->
+                <div class="col-sm-8 col-md-4">
+                    <div class="single_price_plan item wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="title">
+                            <h3>Enterprise</h3>
+                        </div>
+                        <div> <h3>Call Us</h3></div>
+                        <div class="description">
+                            <p>Everything from Start-up and Pro.</p>
+                            <p>Dedicated Engineer for the account</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-default" href="#" role="button">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
 
-		    			</div><!-- #brief-img -->
+                <!-- Single Price Plan Area Start -->
+<!--
+                <div class="col-sm-6 col-md-3">
+                    <div class="single_price_plan item wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="title">
+                            <h3>Pro</h3>
+                            <p>Unlimited Possibilities</p>
+                        </div>
+                        <div class="price">
+                            <h4>$79</h4>
+                        </div>
+                        <div class="description">
+                            <p>Duration: 1 year</p>
+                            <p>Free Registration</p>
+                            <p>Unlimited Features</p>
+                            <p>No Hidden Fees</p>
+                            <p>Unlimited Video Tuts</p>
+                            <p>Unlimited Tools</p>
+                        </div>
+                        <div class="button">
+                            <a class="btn btn-default" href="#" role="button">Pick This Plan</a>
+                        </div>
+                    </div>
+                </div>
+-->
 
+            </div>
+        </div>
+    </div>
+    <!-- ::::::::::::::::::::::::::: Price and Plans Area End ::::::::::::::::::::::::::: -->
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content4-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/Portfolio.svg" alt="img"></span>Classroom</h2>
-		    						<p class="section-paragraph">Learning should not stop during holidays. It offers a robust video conferencing solution to stimulate a virtual classroom experience to students, thus facilitating distance learning. Educators can broadcast their video feed along with their whiteboard in real time to the audience. Viewers can raise questions, share their screens and engage with other participants, bridging the gap between educators and students, regardless of their location.</p>
-		    					</div>
-		    				</div>
+    <!-- ::::::::::::::::::::::::::: Total User Area Start ::::::::::::::::::::::::::: -->
+    <section class="total_subscriber_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Total User Text Start -->
+                    <div class="total_subscriber_text">
+                        <h3>Knowledge has No Limits and Learning knows No Boundaries with Chalkkeeper</h3>
+                        <a href="http://demo.chalkkeeper.com/login/index.php">Try Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: Total User Area End ::::::::::::::::::::::::::: -->
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->	
-	    	</div>
-	    	<div class="slide fade-mobile" id="slide05">
-		    	
-		    	<div class="container scroll_container" id="container5">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <!-- ::::::::::::::::::::::::::: Our Advisor Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <section class="our_advisor_area section_padding_100_70" id="advisor">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Section Heading Start &ndash;&gt;
+                    <div class="section_heading wow fadeInUp">
+                        <h2>Creative <span>Team</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    &lt;!&ndash; Section Heading End &ndash;&gt;
+                </div>
+            </div>
+            <div class="row">
 
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img5-slide" src="img/app-tab.png" alt="">
+                &lt;!&ndash; Single advisor profile area start &ndash;&gt;
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single_advisor_profile item wow fadeInUp" data-wow-delay="0.2s">
+                        &lt;!&ndash; Single advisor profile thumb &ndash;&gt;
+                        <div class="advisor_thumb">
+                            <img src="img/advisor-img/advisor-1.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single advisor profile details &ndash;&gt;
+                        <div class="single_advisor_details_info">
+                            <h4>SAMANTHA SAHAR</h4>
+                            <p class="designation">Founder &amp; CEO</p>
+                        </div>
+                        <div class="advisor_social_link">
+                            <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                            <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-		    				</div>
+                &lt;!&ndash; Single advisor profile area start &ndash;&gt;
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single_advisor_profile item wow fadeInUp" data-wow-delay="0.4s">
+                        &lt;!&ndash; Single advisor profile thumb &ndash;&gt;
+                        <div class="advisor_thumb">
+                            <img src="img/advisor-img/advisor-2.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single advisor profile details &ndash;&gt;
+                        <div class="single_advisor_details_info">
+                            <h4>Nazrul Islam</h4>
+                            <p class="designation">Co-founder</p>
+                        </div>
 
-		    			</div><!-- #brief-img -->
+                        <div class="advisor_social_link">
+                            <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                            <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
 
+                &lt;!&ndash; Single advisor profile area start &ndash;&gt;
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single_advisor_profile item wow fadeInUp" data-wow-delay="0.6s">
+                        &lt;!&ndash; Single advisor profile thumb &ndash;&gt;
+                        <div class="advisor_thumb">
+                            <img src="img/advisor-img/advisor-3.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single advisor profile details &ndash;&gt;
+                        <div class="single_advisor_details_info">
+                            <h4>RIYADH KHAN</h4>
+                            <p class="designation">General Manager</p>
+                        </div>
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content5-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/attendence.svg" alt="img"></span>Plagiarism Detection</h2>
-		    						<p class="section-paragraph">Do away with the teachers’ workload crisis. Chalkkeeper has an integrated plagiarism detection algorithm that can automatically submit and check the student’s paper for plagiarism. Assignments can be securely stored on the cloud for easy retrieval and access. Say goodbye to lugging around physical assignments.</p>
-		    					</div>
-		    				</div>
+                        <div class="advisor_social_link">
+                            <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                            <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->  	
-	    	</div>
-	    	<div class="slide fade-mobile" id="slide06">
-		    	
-		    	<div class="container scroll_container" id="container6">
-		    		<div class="row">
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="brief-img_in brief-imgWidth">
-		    					<img class="animated img-slide img-responsive" id="img6-slide" src="img/android-tablet.png" alt="">
+                &lt;!&ndash; Single advisor profile area start &ndash;&gt;
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="single_advisor_profile item wow fadeInUp" data-wow-delay="0.8s">
+                        &lt;!&ndash; Single advisor profile thumb &ndash;&gt;
+                        <div class="advisor_thumb">
+                            <img src="img/advisor-img/advisor-4.jpg" alt="">
+                        </div>
+                        &lt;!&ndash; Single advisor profile details &ndash;&gt;
+                        <div class="single_advisor_details_info">
+                            <h4>Shaila Afrin</h4>
+                            <p class="designation">Financial Manager</p>
+                        </div>
 
-		    				</div>
+                        <div class="advisor_social_link">
+                            <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                            <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-		    			</div><!-- #brief-img -->
+            </div>
+        </div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: Our advisor Area End ::::::::::::::::::::::::::: -->
 
+    <!-- ::::::::::::::::::::::::::: FAQ Area Start ::::::::::::::::::::::::::: -->
+    <section class="faq_area section_padding_100" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Section Heading Start -->
+                    <div class="section_heading wow fadeInUp">
+                        <h2><span>Some</span> FAQ</h2>
+                        <p>Learn. Connect. Perform</p>
+                    </div>
+                    <!-- Section Heading End -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-sm-7 clearfix">
+                    <div class="accordions" id="accordion2" role="tablist" aria-multiselectable="true">
 
-		    			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		    				<div class="set_relative">
-		    					<div id="content6-slide" class="animated set_absolute desc_product">
-		    						<h2 class="section-heading animated"><span><img src="img/chat.svg" alt="img"></span>Messaging</h2>
-		    						<p class="section-paragraph">Clarify your doubts and take lessons instantly. It offers a rich communication platform ‘Bol’ that supports Message Broadcast to student groups, peer-to-peer chat, Email, one-on-one interaction with teachers, and internal communication between various class groups.</p>
-		    					</div>
-		    				</div>
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h5><a role="button" class="collapsed" aria-expanded="true" aria-controls="six" data-toggle="collapse" data-parent="#accordion2" href="#six">Why is Chalkkeeper a cut above the crowd?<span class="accor-open"><i class="icofont icofont-rounded-down"></i></span>
+                                   <span class="accor-close"><i class="icofont icofont-rounded-up"></i></span>
+                                    </a>
+                            </h5>
+                            <div id="six" class="accordion-content collapse">
+                                <ul>
+                                    <li>In-built ‘artificial intelligence’ that makes it truly interactive, intelligent and intuitive</li>
+                                    <li>Replicates ‘collaborative’ classroom environment anytime, anywhere</li>
+                                    <li>Leverages ‘gamification’ for maximum learner engagement</li>
+                                </ul>
+                            </div>
+                        </div>
 
-		    			</div><!-- #brief-text -->
-		    		</div><!--row-->
-		    	</div><!-- .container -->  	
-	    	</div>
-	    	
-	    	<!-- many more -->
-	    	<div id="ck-many">
-		    	<div class="ck-wrap">
-		    		<!-- [class*="content-"] = container max-width:50% = 600px -->
-		    		<div class="ck-content-center">
-		    			<h3>And Many More</h3>
-		    			<ul class="ck-flexblock ck-specs">
-		    				<li>
-		    					<div>
-		    						<p>
-		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-		    							<span class="ck-many-content">Lead the students through their own discoveries. The in-built peer review functionality can help to strengthen the student's’ work and save grading time.</span>
-		    						</p>
-		    					</div>
-		    				</li>
-		    				<li>
-		    					<div>
-		    						<p>
-		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-		    							<span class="ck-many-content">Gamify the learning experience. The game elements such as activity points, rewards, badges, leaderboards and profiles are integrated into the learning management system. This enhances learners’ intrinsic motivation.</span>
-		    						</p>
-		    					</div>
-		    				</li>
-		    				<li>
-		    					<div>
-		    						<p>
-		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-		    							<span class="ck-many-content">Prepare and conduct online assessments and quizzes. Chalk Keeper offers you a simple tool to conduct in-app quizzes, assessments and various skill based certification courses, through a user friendly, drag and drop web application. The need for physical involvement is removed.</span>
-		    						</p>
-		    					</div>
-		    				</li>
-		    				<li>
-		    					<div>
-		    						<p>
-		    							<span class="ck-many-icon"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-		    							<span class="ck-many-content">Gather feedback on students’ learning experience. The feedback tools and online polls can allow students to share their feedback to the educators in an anonymous manner. The advanced analytical engine can crunch the numbers to yield insightful reports and visuals for improving teaching methodologies.</span>
-		    						</p>
-		    					</div>
-		    				</li>
-		    			</ul>
-		    		</div>
-		    		<!-- end .content-center -->
-		    	</div>
-	    	</div>
-			<!-- .end .wrap -->
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h5>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="seven" data-parent="#accordion2" data-toggle="collapse" href="#seven">ChalkKeeper for Students.
+                                       <span class="accor-open"><i class="icofont icofont-rounded-down"></i></span>
+                                        <span class="accor-close"><i class="icofont icofont-rounded-up"></i></span>
+                                    </a>
+                            </h5>
+                            <div id="seven" class="accordion-content collapse">
+                                <ul>
+                                    <li>Applies the game mechanics to make learning a fun and engaging experience. </li>
+                                    <li>Allows students to collaborate with peers and teachers after school-hours</li>
+                                    <li>Motivates students to take control of their learning progress</li>
+                                </ul>
+                            </div>
+                        </div>
 
-	    	<div id="ck-price">
-	    		<div class="ck-wrap">
-	    			<h2 class="ck-aligncenter">Pricing</h2>
-	    			<ul class="ck-flexblock ck-plans ck-blink">
-	    				<li>
-	    					<a href="#" title="Register">
-	    						<h2>Starter</h2>
-	    						<div>
-	    							<span class="ck-price"><sup>&#x20b9;</sup>25,000<sup>/month</span>
-	    							<p>Up to 200 users</p>
-	    							<p>e-mail support</p>
-	    							<p>initial training</p>
-	    							<span class="ck-button ck-ghost">Select</span>
-	    						</div>
-	    					</a>
-	    				</li>
-	    				<li>
-	    					<a href="#" title="Purchase">
-	    						<h2>Pro</h2>
-	    						<div>
-	    							<span class="ck-price"><sup>&#x20b9;</sup>1,00,000<sup>/month</sup></span>
-	    							<p>up to 1000 users</p>
-	    							<p>phone support</p>
-	    							<p>Montly Reports</p>
-	    							<p>Online classroom</p>
-	    							<p>Intial setup</p>
-	    							<p>Initial Training</p>
-	    							<span class="ck-button ck-radius">Buy Now</span>
-	    						</div>
-	    					</a>
-	    				</li>
-	    				<li>
-	    					<a href="#" title="Purchase">
-	    						<h2>Enterprise</sup></h2>
-	    						<div>
-	    							<span class="ck-price">Call Us</span>
-	    							<p>Everything from Starter and Pro.</p>
-	    							<p>Dedicated Engineer for the account.</p>
-	    							<span class="ck-button ck-ghost">Select</span>
-	    						</div>
-	    					</a>
-	    				</li>
-	    			</ul>
-	    		</div>
-	    	</div>
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h5>
+                                <a role="button" aria-expanded="true" aria-controls="eight" class="collapsed" data-parent="#accordion2" data-toggle="collapse" href="#eight">Chalkkeeper for Administrators. 
+                                        <span class="accor-open"><i class="icofont icofont-rounded-down"></i></span>
+                                        <span class="accor-close"><i class="icofont icofont-rounded-up"></i></span>
+                                    </a>
+                            </h5>
+                            <div id="eight" class="accordion-content collapse">
+                                <ul>
+                                    <li>Automates the routine activities such as scheduling lectures, administering tests and generating reports </li>
+                                    <li>Optimizes the resources and workflow for efficient and productive teaching</li>
+                                    <li>Enables individualized learning to nurture each student’s personal learning journey</li>
+                                </ul>
+                            </div>
+                        </div>
 
-	    	<div id="ck-contact">
-		    	<div class="ck-wrap">
-		    		<h1>Contact Us</h1>
-		    		<div class="ck-grid ck-vertical-align">
-		    			<div class="ck-column">
-		    				<form action="/" method="post">
-		    					<fieldset>
-		    						<legend>Write to us</legend>
-		    						<p><input type="text" tabindex="1" name="username" placeholder="Username" required></p>
-		    						<p><input type="email" tabindex="2" name="email" placeholder="your@email.com" required></p>
-		    						<p><textarea placeholder="Your message here"></textarea></p>
-		    						<p><button type="submit" tabindex="4" title="Sign Up">Submit &rsaquo;</button></p>
-		    					</fieldset>
-		    				</form>
-		    			</div>
-		    			<!-- .end .column -->
-		    			<div class="ck-column">
-		    				<ul class="ck-flexblock ck-specs">
-		    					<li>
-		    						<div>
-		    							<h2>Chalk Keeper</h2>
-		    						</div>
-		    					</li>
-		    					<li>
-		    						<div>
-		    							<span><i class="fa fa-address-card" aria-hidden="true"></i></span>
-		    							<h2>Bangalore Address</h2>
-		    							<p>
-		    								<address>#1372/C, 1st Floor, 32nd E Cross</address>
-	    									<address>4th T Block, Jayanagara, Bengaluru-41</address>
-	    									<address>Contact-Person : Vinay</address>
-	    									<address>Mob:+91-900-077-2494</address>
-		    							</p>
-		    						</div>
-		    					</li>
-		    					<li>
-		    						<div>
-		    							<span><i class="fa fa-address-card" aria-hidden="true"></i></span>
-		    							<h2>U.S Address</h2>
-		    							<p>
-		    								<address>545 E John Carpenter Fwy</address>
-	    									<address>Irving, TX 75062, USA</address>
-	    									<address>Contact-Person : Dilip</address>
-	    									<address>Mob:+1-910-299-8799</address>
-		    							</p>
-		    						</div>
-		    					</li>
-		    				</ul>
-		    			</div>
-		    			<!-- .end .column -->
-		    		</div>
-		    		<!-- .end .grid -->
-		    	</div>
-	    	</div>
+                        <!-- single accordian area start -->
+                        
+                    </div>
+                </div>
 
-	    	<footer id="ck-footer">
-	    		<div class="ck-wrap">
-	    			<div>
-	    				<div class="ck-alignleft">
-	    					<h3>Company</h3>
-	    					<ul>
-	    						<li><a href="story.html">Our Story</a></li>
-	    						<li><a href="career.html">Careers</a></li>
-	    						<!-- <li><a href="">Blog</a></li> -->
-	    					</ul>
-	    				</div>
-	    				<div class="ck-alignright">
-	    					All rights reserved
-	    				</div>
-	    				<div style="clear: both;"></div>
-	    			</div>
-	    		</div>
-	    	</footer>
-	    	<!-- <div class="slide fade-mobile" id="slide05">
-	    		<div id="page-wrapper">
-	    			<h1>Contact Form </h1>
+                <div class="col-xs-12 col-md-4 col-sm-5">
+                    <!-- Can't Find Answer Area -->
+                    <div class="find_answer_area">
+                        <h4>Can't find suitable answer?</h4>
+                        <p>Ask our support team</p>
+                        <a href="#contact"><i class="icofont icofont-mail"></i> Mail Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: FAQ Area End ::::::::::::::::::::::::::: -->
 
-	    			<div id="form-messages"></div>
+    <!-- ::::::::::::::::::::::::::: Newsletter Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <section class="newsletter_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Section Heading Start &ndash;&gt;
+                    <div class="section_heading wow fadeInUp">
+                        <h2>Subscribe to our <span>newsletter</span> <br> and get update.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor modi
+                            <br>laudantium pariatur dolorem soluta nesciunt mollitia, labore, a. Nisi, nostrum.</p>
+                    </div>
+                    &lt;!&ndash; Section Heading End &ndash;&gt;
+                </div>
+            </div>
 
-	    			<form id="ajax-contact" method="post" action="mailer.php">
-	    				<div class="field">
-	    					<label for="name">Name:</label>
-	    					<input type="text" id="name" name="name" required>
-	    				</div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
+                    <div class="mailchimp_area wow fadeInUp">
+                        &lt;!&ndash; Begin MailChimp Signup Form &ndash;&gt;
+                        <div id="mc_embed_signup">
+                            <form action="//designing-world.us14.list-manage.com/subscribe/post?u=f0c5b9ba9531961ccc866101b&amp;id=42a1f17754" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter Email Address" required>
+                                    &lt;!&ndash; real people should not fill this in and expect good things - do not remove this or risk form bot signups&ndash;&gt;
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_f0c5b9ba9531961ccc866101b_42a1f17754" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        &lt;!&ndash;End mc_embed_signup&ndash;&gt;
+                    </div>
+                </div>
+            </div>
 
-	    				<div class="field">
-	    					<label for="email">Email:</label>
-	    					<input type="email" id="email" name="email" required>
-	    				</div>
+        </div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: Newsletter Area End ::::::::::::::::::::::::::: -->
 
-	    				<div class="field">
-	    					<label for="message">Message:</label>
-	    					<textarea id="message" name="message" required></textarea>
-	    				</div>
+    <!-- ::::::::::::::::::::::::::: Timeline Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <section class="timeline_area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Section Heading Start &ndash;&gt;
+                    <div class="section_heading wow fadeInUp">
+                        <h2>Our <span>History</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    &lt;!&ndash; Section Heading End &ndash;&gt;
+                </div>
+            </div>
 
-	    				<div class="field">
-	    					<button type="submit">Send</button>
-	    				</div>
-	    			</form>
-	    		</div>
-	    	</div> -->
-	    	<!-- <div id="contact-form" class="slide ">
-	    		<form id="my_form" onsubmit="submitForm(); return false;">
-	  				<p><input id="n" placeholder="Name" required></p>
-	  				<p><input id="e" placeholder="Email Address" type="email" required></p>
-	  				<textarea id="m" placeholder="write your message here" rows="10" required></textarea>
-	  				<p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
-				</form>
-	    	</div> -->
-	    	<a class="prev" href="javascript:void(0)" onclick="plusSlides(-1); return false">❮</a>
-				<a class="next" href="javascript:void(0)" onclick="plusSlides(-1); return false">❯</a>
-				<div class="dot-parent" style="text-align:center">
-				  <span class="dot" onclick="currentSlide(1);"></span> 
-				  <span class="dot" onclick="currentSlide(2);"></span> 
-				  <span class="dot" onclick="currentSlide(3);"></span> 
-				</div>
-	    </section>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="history_timeline_area">
 
-	   <!-- <h1>hi</h1> -->
-	</div>
-	
-  <script src="js/bootstrap.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/smooth-scroll.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- <script type="text/javascript" src="js/app.js"></script> -->
-  <script type="text/javascript">
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block even-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-users"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Reach 200k Users</h3>
+                                <h5>01 January 2017</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-  $(function() {
-      $(window).on('load', function(){
-        $(document.body).addClass('loading-done');
-      });
-      // Start of Tawk.to Script--
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-		s1.async=true;
-		s1.src='https://embed.tawk.to/583fdcaf8a20fc0cac4a75ee/default';
-		s1.charset='UTF-8';
-		s1.setAttribute('crossorigin','*');
-		s0.parentNode.insertBefore(s1,s0);
-	})();
-	// Start of Tawk.to Script
-      //= shrink and expand the navbar 
-      $(window).bind('scroll', function () {
-      	var wScroll = $(this).scrollTop();
-      	//console.log(wScroll);
-      	if ($(window).scrollTop() > 5) 
-      	$('#grad-hat img').addClass("flyhat");
-      	else 
-      		$('#grad-hat img').removeClass("flyhat");
-      	// $('#grad-hat img').css({'transform': 'translate(0px, -'+wScroll*2+'%)'});
-      	// $('#company-title').css({'transform': 'translate(0px, '+wScroll+'%)'});
-      	// $('#company-caption').css({'transform': 'translate(0px, '+wScroll/wScroll+'%)'});
-        if ($(window).scrollTop() > 50) 
-        {
-        	$("#change-container").removeClass("container-fluid");
-        	$("#change-container").addClass("container");        	
-        	$('.navbar').addClass('shrink');
-        	$("div.navbar-left").addClass("navbar-left-tab")
-        	$('#ck-logo').addClass('transit');
-        	$('.rect').addClass('logo-transit');
-        	$('.rect').removeClass('breath');
-        	$('.rect1').addClass('logo-content-transit1');
-        	$('.rect2').addClass('logo-content-transit2');
-        	$('.rect3').addClass('logo-content-transit3');
-        	// $('#company-caption').css({'transform': 'translate(0px,'+100*wScroll/wScroll+'%)'});
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block odd-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-exchange"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Update Version 1.3.0</h3>
+                                <h5>21 December 2016</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-        }
-        else
-        {
-        	
-        	$("#change-container").removeClass("container");
-        	$("#change-container").addClass("container-fluid");
-	        $('.navbar').removeClass('shrink');
-	        $('#ck-logo').removeClass('transit');
-	        $('.rect').removeClass('logo-transit');
-	        $('.rect').addClass('breath');
-			$('.rect1').removeClass('logo-content-transit1');
-			$('.rect2').removeClass('logo-content-transit2');
-			$('.rect3').removeClass('logo-content-transit3');
-    	 }
-      	// if ($(window).scrollTop() > 678) 
-      	// {
-      	// 	$('#slide-nav').addClass('show-nav');
-      	// 	$('#slide-nav').removeClass('hide-nav');
-      	// }
-      	// else
-      	// 	$('#slide-nav').removeClass('show-nav');
-      	// 	$('#slide-nav').addClass('hide-nav');
-      });
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block even-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-bug"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Fix bugs</h3>
+                                <h5>12 November 2016</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-      //= autoplay the video when the modal show up
-      
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block odd-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-users-social"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Reach 100k Community Members</h3>
+                                <h5>04 November 2016</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-      //= equal columns height
-      // matchHeight('#states .col-inner');
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block even-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-power-zone"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Make more powerful and stable</h3>
+                                <h5>28 October 2016</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-      //= counterUp plugin
-      $('.counterUp').counterUp({ delay: 10, time: 1500 });
+                        &lt;!&ndash; Single Timeline Area Start &ndash;&gt;
+                        <div class="single_timeline_block odd-item clearfix wow fadeInUp">
+                            <div class="timeline_icon">
+                                <i class="icofont icofont-paper-plane"></i>
+                            </div>
+                            <div class="timeline_text_content">
+                                <h3>Initial Release</h3>
+                                <h5>25 October 2016</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam fugiat, vitae facere. Provident odio saepe iure, commodi doloribus architecto.</p>
+                            </div>
+                        </div>
 
-      //= set the max-height property for .navbar-collapse
-      $(window).on('load resize orientationchange', function(){
-        $('.navbar-collapse').css('max-height', $(window).height() - $('.navbar').height());
-      });
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- ::::::::::::::::::::::::::: Timeline Area End ::::::::::::::::::::::::::: -->
 
-      $(document).on('click', '[data-toggle="collapse"]', function(e){
-        var $trigger = $(e.target);
-        $trigger.is('[data-toggle="collapse"]') || ($trigger = $trigger.parents('[data-toggle="collapse"]'));
-        var $target = $($trigger.attr('data-target'));
-        if ($target.attr('id') === 'page-menu-collapse')
-          $(document.body).toggleClass('navbar-collapse-show', !$trigger.hasClass('collapsed'))
-      });
+    <!-- ::::::::::::::::::::::::::: Download App Area Start ::::::::::::::::::::::::::: -->
+<!--
+    <div class="download_app_area section_padding_100" id="download">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &lt;!&ndash; Download Text Area &ndash;&gt;
+                    <div class="download_app_text text-center">
+                        <h1>Download <span>App</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <br>Velit explicabo eos vel unde voluptatibus corporis?</p>
+                        <a href="#"><i class="icofont icofont-brand-android-robot"></i> <span>Play Store</span></a>
+                        <a href="#"><i class="icofont icofont-brand-apple"></i> <span>App Store</span></a>
+                        <a href="#"><i class="icofont icofont-brand-windows"></i> <span>Windows Store</span></a>
+                        &lt;!&ndash; Download Image Area &ndash;&gt;
+                        <div class="download_img  wow fadeInDown" data-wow-delay="0.2s">
+                            <img src="img/bg-pattern/download-mobile.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- ::::::::::::::::::::::::::: Download App Area End ::::::::::::::::::::::::::: -->
 
-      //= initialize smooth scroll plugin
-      smoothScroll.init({
-	        offset: 60,
-	        speed: 1000,
-	        updateURL: false
-	      });
-      // if ($(window).width()>320 && $(window).width()<767) {
-	     //  smoothScroll.init({
-	     //    offset: 60,
-	     //    speed: 50,
-	     //    updateURL: false
-	     //  });
-	     // }
-	     // else{
-	     // 	smoothScroll.init({
-	     //    offset: 60,
-	     //    speed: 1000,
-	     //    updateURL: false
-	     //  });
-	     // }
+    <!-- ::::::::::::::::::::::::::: Message Now Area Start ::::::::::::::::::::::::::: -->
+    <section class="message_now_area section_padding_100_70" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8">
+                    <!-- Message Title -->
+                    <div class="message_title">
+                        <!-- Section Heading Start -->
+                        <div class="section_heading wow fadeInUp">
+                            <h2><span>Write</span> Us</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                        </div>
+                        <!-- Section Heading End -->
+                    </div>
 
-      // initializing owlCarousel
-      // $("#owl-slider").owlCarousel({
-      //   slideSpeed : 300,
-      //   paginationSpeed : 400,
-      //   singleItem:true,
-      //   autoPlay: true
-      // });
+                    <div class="contact_from">
+                        <form action="mail.php" method="post" id="main_contact_form">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div id="success_fail_info"></div>
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="number" id="number" placeholder="Your Number *" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-xs-12">
+                                        <div class="form-group textarea">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-xs-12">
+                                        <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <div id="ck-addr">
+                        <h3>U.S.A</h3>
+                        <address>545 E John Carpenter Fwy</address>
+                        <address>Irving, TX 75062, USA</address>
+                        <address>Mob : +1-910-299-8799</address>
+                        <h3>India</h3>
+                        <address>#1372/C, 1st Floor, 32nd E Cross</address>
+                        <address>4th T Block, Jayanagara, Bengaluru-41</address>
+                        <address>Mob:+91-900-077-2494</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ::::::::::::::::::::::::::: Message Now Area Start ::::::::::::::::::::::::::: -->
 
-      // initialize waypoints for section-headings
-      $('.section-heading').waypoint(function(direction) {
-        if (direction === 'down') $(this.element).addClass('fadeInUp');
-        else $(this.element).removeClass('fadeInUp');
-      }, { offset: '96%' });
-      $('#company-caption').waypoint(function(direction) {
-        if (direction === 'down') $(this.element).addClass('bounceInLeft');
-        else $(this.element).removeClass('bounceInLeft');
-      }, { offset: '96%' });
-      $('#grad-hat').waypoint(function(direction) {
-        if (direction === 'up') $(this.element).addClass('fadeInDown');
-        else $(this.element).removeClass('pulse');
-      }, { offset: '96%' });
+    <!-- ::::::::::::::::::::::::::: Map Area Start ::::::::::::::::::::::::::: -->
 
-      $('#company-title>span').each(function(){
-      	$(this).delay(200).addClass('fadeInUpBig');
-      	
-      	});
-      $("#page-menu-collapse li>a").click(function(){
-		// alert("hello");
-		$("#page-menu-collapse li").children().removeClass("active");
-		$(this).addClass("active");
-	});
-      
-    });
-</script>
+    <!-- <div class="map_contact_address_area">
+        &lt;!&ndash; Map Area Start &ndash;&gt;
+        <div class="map_area" id="googleMap"></div>
+    </div> -->
+
+    <!-- ::::::::::::::::::::::::::: Map Area End ::::::::::::::::::::::::::: -->
+
+    <!-- ::::::::::::::::::::::::::: Footer Area Start ::::::::::::::::::::::::::: -->
+    <footer class="footer_area">
+        <!-- Bottom Footer Area Start -->
+        <div class="footer_bottom_area">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Social Area Start -->
+                    <div class="col-xs-12">
+                        <div class="footer_social_area">
+                            <a href="#" class="wow fadeInDown" data-wow-delay="0.2s"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="#" class="wow fadeInDown" data-wow-delay="0.4s"><i class="icofont icofont-social-google-plus"></i></a>
+                            <a href="#" class="wow fadeInDown" data-wow-delay="0.6s"><i class="icofont icofont-social-pinterest"></i></a>
+                            <a href="#" class="wow fadeInDown" data-wow-delay="0.8s"><i class="icofont icofont-social-skype"></i></a>
+                            <a href="#" class="wow fadeInDown" data-wow-delay="1s"><i class="icofont icofont-social-twitter"></i></a>
+                        </div>
+                        <!-- Footer Menu Area Start -->
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <!-- <li><a href="#">Term &amp; Conditions</a></li>
+                                <li><a href="#">Help Center</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end./ row -->
+        </div>
+        <!-- end./ container -->
+
+        <div class="footer_copywrite_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Footer Copwrite Area -->
+                        <div class="footer_bottom text-center">
+                            <p>Made with <i class="icofont icofont-heart-alt"></i> by <a href="#">ChalkKeeperTeam</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ::::::::::::::::::::::::::: Footer Area End ::::::::::::::::::::::::::: -->
+
+    <!-- ::::::::::::::::::::::::::: All jQuery Plugins ::::::::::::::::::::::::::: -->
+
+    <!-- jQuery (necessary for all JavaScript plugins) -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Owl-carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="js/plugins.min.js"></script>
+
+    <!-- GOOGLE MAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk" type="text/javascript"></script>
+
+    <!-- GOOGLE ACTIVE JS -->
+    <script src="js/map-active.js"></script>
+
+    <!-- Active js -->
+    <script src="js/custom.js"></script>
+
+    <!-- icomoon js -->
+    <script type="text/javascript" src="js/demo.js"></script>
 
 </body>
+
+</html>
