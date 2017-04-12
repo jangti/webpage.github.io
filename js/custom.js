@@ -192,6 +192,16 @@
         $('#preloader').fadeOut('slow', function () {
             $(this).remove();
         });
+
+        $('.fulltext').hide();
+
+    $('.readmore').click(function (event) {
+        event.preventDefault();
+        $(this).parent().find('.fulltext').slideToggle('slow');
+        $(this).parent().toggleClass('show_more');
+        $(this).text($(this).text() == 'Read less...' ? 'Read more...' : 'Read less...');
     });
+    });
+
 
 })(jQuery);

@@ -907,7 +907,10 @@
     .more_features_area {
         background-color: #f6f6f6;
     }
-    
+    div .show_more{
+        height: auto !important;
+        transition: height 1s linear;
+    }
     .single_benifits {
         background-color: #fff;
         border-radius: 5px;
@@ -918,7 +921,10 @@
         transition-duration: 500ms;
         z-index: 1;
         text-align: center;
+        transition: height 1s linear;
+        height: 231px !important;
     }
+    
     
     .single_benifits.active {
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
@@ -1492,7 +1498,7 @@
         background-color: #f6f6f6;
         position: relative;
         z-index: 1;
-        background-image: url(img/bg-pattern/call-to-action.jpg);
+        background-image: url(img/images/subscribe.jpg);
         background-size: cover;
         background-position: 0 0;
     }

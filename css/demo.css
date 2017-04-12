@@ -24,6 +24,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#features [class^="icon-"]{
+  font-size: 36px;
+}
 
 .icon-Assignments .path1:before {
   content: "\e900";
