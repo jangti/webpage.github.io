@@ -523,6 +523,17 @@
     .mainmenu ul#nav>li ul.sub-menu li a:hover {
         color: #2196F3;
     }
+    header .google_translate_element .goog-te-gadget-simple{
+        background-color: transparent;
+        border:none;
+    }
+    header .google_translate_element .goog-te-gadget-simple img, header .google_translate_element 
+    .goog-te-gadget-simple span{
+        display: inline-block;
+    }
+    header .google_translate_element .goog-te-gadget-simple span a{
+        padding:0;
+    }
     /* ******************************
     :: 5.0 slider area css
     ****************************** */
