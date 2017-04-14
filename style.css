@@ -527,7 +527,7 @@
         background-color: transparent;
         border:none;
     }
-    header #google_translate_element .goog-te-gadget-simple img, header .google_translate_element 
+    header #google_translate_element .goog-te-gadget-simple img, header #google_translate_element 
     .goog-te-gadget-simple span{
         display: inline-block;
     }
