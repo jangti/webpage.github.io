@@ -596,7 +596,7 @@
         text-align: right;
     }
     
-    .welcome_text_area h2 {
+    .welcome_text_area h1 {
         color: #fff;
         font-size: 60px;
         font-weight: 500;
@@ -627,7 +627,7 @@
         }
     }
     
-    .default-version .welcome_text_area h2,
+    .default-version .welcome_text_area h1,
     .boxed_version .welcome_text_area h2,
     .rtl_version .welcome_text_area h2 {
         color: #363636;
